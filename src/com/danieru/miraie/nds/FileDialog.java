@@ -189,8 +189,12 @@ public class FileDialog extends SherlockListActivity {
 		for (File file : files) {
 			if (file.isDirectory()) {
 				String dirName = file.getName();
+				if (dirName.charAt(0) == '.')
+					break;
+				
 				dirsMap.put(dirName, dirName);
 				dirsPathMap.put(dirName, file.getPath());
+				
 			} else {
 				final String fileName = file.getName();
 				final String fileNameLwr = fileName.toLowerCase(Locale.ENGLISH);
@@ -204,6 +208,7 @@ public class FileDialog extends SherlockListActivity {
 							break;
 						}
 					}
+					
 					if (contains) {
 						filesMap.put(fileName, fileName);
 						filesPathMap.put(fileName, file.getPath());
