@@ -1,186 +1,205 @@
 <resources>
     
 	<!-- Release 1 -->
-    <string name="app_name">ANDSemu</string>
-    <string name="title_activity_main">ANDSemu</string>
-	<string name="rom_error">ROM 로딩 중 에러가 발생하였습니다 :(</string>
-	<string name="OK">OK</string>
-	<string name="location">위치</string>
-    <string name="cant_read_folder">폴더를 읽을 수 없습니다!</string>
-    <string name="cancel">취소</string>
-    <string name="no_data">데이터 없음</string>
-    <string name="Load">로드</string>
-    <string name="QuickSave">빠른 세이브</string>
-    <string name="QuickRestore">빠른 복원</string>
-    <string name="SaveState">현재상태 저장</string>
-    <string name="RestoreState">상태 복원</string>
-    <string name="Settings">설정</string>
+    <string name="app_name">"ANDSemu"</string>
+    <string name="title_activity_main">"ANDSemu"</string>
+	<string name="rom_error">"ROM 로딩 중 에러가 발생하였습니다 : ("</string>
+	<string name="OK">"OK"</string>
+	<string name="location">"위치"</string>
+    <string name="cant_read_folder">"폴더를 읽을 수 없습니다!"</string>
+    <string name="cancel">"취소"</string>
+    <string name="no_data">"데이터 없음"</string>
+    <string name="Load">"로드"</string>
+    <string name="QuickSave">"빠른 세이브"</string>
+    <string name="QuickRestore">"빠른 복원"</string>
+    <string name="SaveState">"현재 상태 저장"</string>
+    <string name="RestoreState">"상태 복원"</string>
+    <string name="Settings">"설정"</string>
     
 	<!-- Release 2 -->
-    <string name="touchnotify">화면 상단 중앙의 \'터치\' 버튼을 사용하여 터치 모드에서 키패드 모드로 전환하실 수 있습니다</string>
-    <string name="frameskip">프레임 건너뛰기</string>
-    <string name="frameskipdesc">에뮬레이션 중 건너뛸 (Skip) 할 프레임 개수를 지정합니다. 느린 에뮬레이션을 실시간 속도에 맞추도록 돕습니다.</string>
-    <string name="vsync">수직 동기화 (VSync)</string>
-    <string name="vsyncdesc">화면의 주사율에 맞게 게임 화면의 갱신 속도를 동기화 합니다. 에뮬레이션을 느리게 하지만 꺼져있을 경우 화면에 글리치가 발생할 수 있습니다.</string>
-    <string name="fps">FPS 보여주기</string>
-    <string name="fpsdesc">FPS 를 스크린에 그립니다.</string>
+    <string name="touchnotify">"화면 상단 중앙의 '터치'버튼을 사용하여 터치 모드에서 키패드 모드로 전환하실 수 있습니다"</string>
+    <string name="frameskip">"프레임 건너 뛰기"</string>
+    <string name="frameskipdesc">"에뮬레이션 중 건너 뛸 (건너 뛰기) 할 프레임 개수를 지정합니다. 느린 에뮬레이션을 실시간 속도에 맞추도록 돕습니다."</string>
+    <string name="vsync">"수직 동기화 (VSync)"</string>
+    <string name="vsyncdesc">"화면의 주사율에 맞게 게임 화면의 갱신 속도를 동기화합니다. 에뮬레이션을 느리게하지만 꺼져있을 경우 화면에 글리치가 발생할 수 있습니다."</string>
+    <string name="fps">"FPS 보여주기"</string>
+    <string name="fpsdesc">"FPS를 스크린에 그립니다."</string>
     
     <!-- Release 3 -->
-    <string name="loading">로딩</string>    
+    <string name="loading">"로딩"</string>    
     
     <!-- Release 4 -->
-    <string name="filter">스크린 필터</string>
-    <string name="filterdesc">사용자 기기의 해상도에 맞게 Nintendo DS 게임 해상도를 높여줄때 필요한 필터를 선택합니다. 고사양의 필터일 수록 게임 속도를 저하시킵니다.</string>
+    <string name="filter">"스크린 필터"</string>
+    <string name="filterdesc">"사용자 기기의 해상도에 맞게 닌텐도 DS 게임 해상도를 높여 줄때 필요한 필터를 선택합니다. 고사양의 필터 일수록 게임 속도를 저하시킵니다."</string>
     
     <!-- Release 5 -->
-    <string name="threedrenderer">3D 렌더링</string>
-    <string name="threedrendererdesc">원하시는 3D 렌더링 엔진을 선택합니다.</string>
-    <string-array name ="threed_options">
-        <item>사용안함</item>
-        <item>OpenGL 렌더링</item>
-        <item>소프트웨어 자체 렌더링</item>
+    <string name="threedrenderer">"3D 렌더링"</string>
+    <string name="threedrendererdesc">"원하시는 3D 렌더링 엔진을 선택합니다."</string>
+    <string-array name="threed_options">
+        <item>"사용 안함"</item>
+        <item>"OpenGL은 렌더링"</item>
+        <item>"소프트웨어 자체 렌더링"</item>
     </string-array>
-    <string name="sound">사운드 켜기</string>
-    <string name="sounddesc">오디오 처리 및 재생 사용하기. 끌경우 게임 속도가 향상 됩니다.</string>
-    <string name="soundmsg">게임 사운드를 켜시겠습니까? 사운드를 켜실 경우 3 에서 5 FPS 성능 저하가 발생하게됩니다.</string>
-    <string name="yes">예</string>
-    <string name="no">아니오</string>
+    <string name="sound">"사운드 켜기"</string>
+    <string name="sounddesc">"오디오 처리 및 재생 사용하기. 끌 경우 게임 속도가 향상됩니다."</string>
+    <string name="soundmsg">"게임 사운드를 켜시겠습니까? 사운드를 켜실 경우 3에서 5 FPS 성능 저하가 발생하게됩니다."</string>
+    <string name="yes">"예"</string>
+    <string name="no">"아니오"</string>
     
     <!-- Release 8 -->
-    <string name="Display">Display</string>
-    <string name="Controls">Controls</string>
-    <string name="EditLayout">Edit controls layout</string>
-    <string name="EditLayoutDesc">Edit where the touch controls are placed on the screen.</string>
-    <string name="UseTouchPort">Portrait touch buttons</string>
-    <string name="UseTouchPortDesc">Use touch buttons on the screen in portrait mode.</string>
-    <string name="UseTouchLand">Landscape touch buttons</string>
-    <string name="UseTouchLandDesc">Use touch buttons on the screen in landscape mode.</string>
-    <string name="ResetLayout">Reset controls layout</string>
-    <string name="ResetLayoutDesc">Reset the layout of touch controls to their defaults.</string>
-    <string name="Sound">Sound</string>
-    <string name="LCDSwap">Swap LCDs</string>
-    <string name="LCDSwapDesc">Check to swap the location of the main and touch LCDs.</string>
-    <string name="ButtonTrans">Button transparency</string>
-    <string name="ButtonTransDesc">How transparent the on-screen touch buttons should be</string>
-    <string name="Haptic">Haptic feedback</string>
-    <string name="HapticDesc">Provide haptic feedback on button press if supported by device.</string>
-    <string name="KeymapDialogDesc">Press a key to to map to this button</string>
-    <string name="KeymapValuePreface">Currently mapped to</string>
-    <string name="EditKeymap">Edit key mappings</string>
-    <string name="EditKeymapDesc">Edit mappings from hardware keys to DS buttons.</string>
-    <string name="Up">Up</string>
-    <string name="Down">Down</string>
-    <string name="Left">Left</string>
-    <string name="Right">Right</string>
-    <string name="A">A</string>
-    <string name="B">B</string>
-    <string name="X">X</string>
-    <string name="Y">Y</string>
-    <string name="Select">Start</string>
-    <string name="Start">Select</string>
-    <string name="L">L</string>
-    <string name="R">R</string>
-    <string name="Touch">Touch</string>
+    <string name="Display">"스크린"</string>
+    <string name="Controls">"이물질 제어"</string>
+    <string name="EditLayout">"편집 레이아웃을 제어"</string>
+    <string name="EditLayoutDesc">"터치 컨트롤이 화면에 배치되는 위치를 편집합니다."</string>
+    <string name="UseTouchPort">"세로 터치 버튼"</string>
+    <string name="UseTouchPortDesc">"세로 모드에서 화면에 터치 버튼을 사용합니다."</string>
+    <string name="UseTouchLand">"가로 터치 버튼"</string>
+    <string name="UseTouchLandDesc">"가로 모드에서 화면에 터치 버튼을 사용합니다."</string>
+    <string name="ResetLayout">"제어 할 레이아웃을 재설정"</string>
+    <string name="ResetLayoutDesc">"자신의 기본값으로 터치 컨트롤의 레이아웃을 재설정합니다."</string>
+    <string name="Sound">"소리"</string>
+    <string name="LCDSwap">"LCD는을 교환"</string>
+    <string name="LCDSwapDesc">"메인 터치의 LCD의 위치를​​ 교환하려면 선택합니다."</string>
+    <string name="ButtonTrans">"버튼 투명성"</string>
+    <string name="ButtonTransDesc">"화면의 터치 버튼은 어떻게 투명해야"</string>
+    <string name="Haptic">"햅틱 반응"</string>
+    <string name="HapticDesc">"장치에서 지원하는 경우 버튼을 누르에 haptic 피드백을 제공합니다."</string>
+    <string name="KeymapDialogDesc">"이 버튼을지도에 키를 누르십시오"</string>
+    <string name="KeymapValuePreface">"현재에 매핑"</string>
+    <string name="EditKeymap">"키 매핑을 편집합니다"</string>
+    <string name="EditKeymapDesc">"하드웨어 키에서 DS 버튼에 매핑을 편집합니다."</string>
+    <string name="Up">"일어나!"</string>
+    <string name="Down">"아래로"</string>
+    <string name="Left">"왼쪽:"</string>
+    <string name="Right">"우파 "</string>
+    <string name="A">"A"</string>
+    <string name="B">"B"</string>
+    <string name="X">"X "</string>
+    <string name="Y">"Y"</string>
+    <string name="Select">"Start"</string>
+    <string name="Start">"Select"</string>
+    <string name="L">"L"</string>
+    <string name="R">"R "</string>
+    <string name="Touch">"Touch"</string>
     
     <!-- Release 10 -->
-    <string name="DontRotateLCDs">Don\'t rotate LCDs</string>
-    <string name="DontRotateLCDsDesc">In landscape mode, don\'t rotate the game LCDs. Use this for games that were intended to played with the DS held sideways.</string>
-    <string name="Language">Language</string>
-    <string name="LanguageDesc">The language of the system. Multilingual ROMs use this setting. Changes will be applied on the next ROM load.</string>
-    <string name="Gameplay">Gameplay</string>
+    <string name="DontRotateLCDs">"LCD는 회전하지 않습니다"</string>
+    <string name="DontRotateLCDsDesc">"가로 모드에서 게임의 LCD를 회전하지 않습니다. 옆으로 개최 된 DS로 재생하기위한 한 게임이 있습니다."</string>
+    <string name="Language">"언어"</string>
+    <string name="LanguageDesc">"시스템의 언어입니다. 다국어 ROM은이 설정을 사용합니다. 변경은 다음 ROM의 부하에 적용됩니다."</string>
+    <string name="Gameplay">"게임 플레이"</string>
     
     <!-- Release 11 -->
-    <string name="AddCheat">Add a new Action Replay cheat</string>
-    <string name="Cheats">Cheats</string>
-    <string name="Exit">Exit</string>
-    <string name="Edit">Edit</string>
-    <string name="Delete">Delete</string>
-    <string name="Description">Description</string>
+    <string name="AddCheat">"새로운 액션 재생 속임수를 추가합니다"</string>
+    <string name="Cheats">"요령"</string>
+    <string name="Exit">"출구"</string>
+    <string name="Edit">"수정하세요"</string>
+    <string name="Delete">"삭제"</string>
+    <string name="Description">"설명"</string>
     
     <!-- Release 12 -->
-    <string name="EnableMicrophone">Enable microphone</string>
-    <string name="EnableMicrophoneDesc">Use your device\'s microphone as the DS microphone.</string>
-    <string name="AlwaysTouch">Always allow touch</string>
-    <string name="AlwaysTouchDesc">Always process the DS touchscreen, even when not in touch mode. For games that require using controls and touchscreen at the same time.</string>
+    <string name="EnableMicrophone">"마이크를 사용"</string>
+    <string name="EnableMicrophoneDesc">"DS 마이크와 같은 장치의 마이크를 사용하십시오."</string>
+    <string name="AlwaysTouch">"항상 터치를 허용"</string>
+    <string name="AlwaysTouchDesc">"항상하지 않을 때 터치 모드에서, 심지어 DS 터치 스크린을 처리합니다. 동시에 컨트롤과 터치 스크린을 사용하여 필요한 게임."</string>
     
     <!-- Release 14 -->
-    <string name="CheatCode">Code</string>
-    <string name="CurrentValue">Current value</string>
-    <string name="ImageOfFolder">Image of file</string>
+    <string name="CheatCode">"코드:"</string>
+    <string name="CurrentValue">"현재 값"</string>
+    <string name="ImageOfFolder">"파일의 이미지"</string>
+    <string name="about">"ANDSemu는 nds4droid의 포크입니다. 차례로 nds4droid는 제프리 Quesnelle하여 Android에 DeSmuME의 포트입니다 \n\n입니다 ANDSemu이 collectivly 팀 miraie로 알려진 대학 친구의 그룹에 의해 이루어집니다 \n\n입니다 크레딧 :.. nds4droid에 \n 제프리 Quesnelle (emozilla), \nTeam DeSmuME, DeSmuME \n 개의 Sykonist를 들어, 흰색 NDS (단 개발에 사용)의 아이콘에 대한 \n 에반 - 암, 위키 백과 (Wikipedia)와 현재 파란색 지방 NDS 아이콘 \n 알렉산더 Ponomarev에 자신의 contrabutions를 들어, 안드로이드 파일 - 대화 상자 \n Lachlan Tychsen - 스미스, 수학 네온 \n 맥심 Shemanarev를 들어, 안티 - 그레인 기하학에 대한 (AGG) \n p7zip 및 7zip, 보관 강력한를위한"</string>
+	<string name="thankyou">"감사 합니다!"</string>
+	
+	<!-- Release m16 -->
+	<string name="CallToPlay">" 지금 게임하세요!"</string>
+	<string name="ResumeGame">"게임 계속"</string>
+    <string name="CallToLoadAutosave">"마지막으로 자동 저장 재생"</string>
+    <string name="QuickSettings">"빠른 설정"</string>
+    <string name="AllSettings">"모든 설정"</string>
+    <string name="Autosaves">"Autosaves"</string>
+    <string name="NoAutosaves">"아니오 아직 autosaves 없음"</string>
+    <string name="About">"관하여"</string>
+    
+    <!-- Release m17 -->
+    <string name="Pause">"일지정지"</string>
+    <string name="Resume">"계속"</string>
+    <string name="NdsLikeLandscape">"풍경 같은 NDS"</string>
+    <string name="NdsLikeLandscapeDesc">"가로 방향에서 아래 화면 상단에있는 화면을 쌓아. 컨트롤은 화면과 함께합니다."</string>
     
     <!-- Do not translate -->
     <string-array name="filternames">
-        <item>Normal</item>
-		<item>HQ2x</item>
-		<item>2XSaI</item>
-		<item>Super2XSaI</item>
-		<item>SuperEagle</item>
-		<item>Scanline</item>
-		<item>Bilinear</item>
-		<item>Nearest 2X</item>
-		<item>HQ2xS</item>
-		<item>LQ2x</item>
-		<item>LQ2xS</item>
-        <item>EPX</item>
-        <item>Nearest+ 1.5X</item>
-        <item>Nearest 1.5X</item>
-        <item>EPX+</item>
-        <item>EPX 1.5X</item>
-        <item>EPX+ 1.5X</item>
-        <item>HQ4x</item>
+        <item>"Normal"</item>
+		<item>"HQ2x"</item>
+		<item>"2XSaI"</item>
+		<item>"Super2XSaI"</item>
+		<item>"SuperEagle"</item>
+		<item>"Scanline"</item>
+		<item>"Bilinear"</item>
+		<item>"Nearest 2X"</item>
+		<item>"HQ2xS"</item>
+		<item>"LQ2x"</item>
+		<item>"LQ2xS"</item>
+        <item>"EPX"</item>
+        <item>"Nearest+ 1.5X"</item>
+        <item>"Nearest 1.5X"</item>
+        <item>"EPX +"</item>
+        <item>"EPX 1.5X"</item>
+        <item>"EPX + 1.5X"</item>
+        <item>"HQ4x"</item>
     </string-array>
         <string-array name="zerothroughnine">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
     </string-array>
     <string-array name="zerothroughseventeen">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10 "</item>
+        <item>"11 "</item>
+        <item>"12"</item>
+        <item>"13
+"</item>
+        <item>"14 "</item>
+        <item>"15 "</item>
+        <item>"16"</item>
+        <item>"17"</item>
     </string-array>
    	<string-array name="zerothroughtwo">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
     </string-array>
     <string-array name="languages">
-        <item>日本語</item>
-        <item>English</item>
-        <item>Français</item>
-        <item>Deutsch</item>
-        <item>Italiano</item>
-        <item>Español</item>
+        <item>"日本语"</item>
+        <item>"English"</item>
+        <item>"Français"</item>
+        <item>"Deutsch"</item>
+        <item>"Italiano"</item>
+        <item>"Español"</item>
     </string-array>
     <string-array name="zerothroughfive">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
     </string-array>
     
 </resources>
