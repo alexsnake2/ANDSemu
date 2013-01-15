@@ -18,9 +18,11 @@ public class Filespace {
 			 "/.temp",
 			 "/.metadata"};
 
+	static public String getSDcard() {
+		return Environment.getExternalStorageDirectory().getAbsolutePath();
+	}
 	static public String getMainFolder() {
-		return Environment.getExternalStorageDirectory().getAbsolutePath()
-																+ mainFolder; 
+		return getSDcard() + mainFolder; 
 	}
 	
 	static public String getGameFolder() {

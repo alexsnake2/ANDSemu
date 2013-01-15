@@ -28,7 +28,9 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockListActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
@@ -51,24 +53,14 @@ public class FileDialog extends SherlockListActivity {
 
 
 	private static final String ITEM_IMAGE = "image";
-
-
 	private static final String ROOT = "/";
 
-
 	public static final String START_PATH = "START_PATH";
-
-
 	public static final String FORMAT_FILTER = "FORMAT_FILTER";
-
-
 	public static final String RESULT_PATH = "RESULT_PATH";
-
-
 	public static final String SELECTION_MODE = "SELECTION_MODE";
-
-
 	public static final String CAN_SELECT_DIR = "CAN_SELECT_DIR";
+	public static final String ROM_DIR = "ROMDIR";
 
 	private List<String> path = null;
 	private TextView myPath;
@@ -85,6 +77,7 @@ public class FileDialog extends SherlockListActivity {
 
 	private File selectedFile;
 	private HashMap<String, Integer> lastPositions = new HashMap<String, Integer>();
+	private SharedPreferences prefs;
 
 
 	@Override
@@ -95,21 +88,27 @@ public class FileDialog extends SherlockListActivity {
 		setContentView(R.layout.file_dialog_main);
 		myPath = (TextView) findViewById(R.id.path);
 
-
-		//selectionMode = getIntent().getIntExtra(SELECTION_MODE, SelectionMode.MODE_CREATE);
-
 		formatFilter = getIntent().getStringArrayExtra(FORMAT_FILTER);
-
 		canSelectDir = getIntent().getBooleanExtra(CAN_SELECT_DIR, false);
 
-
-		String startPath = getIntent().getStringExtra(START_PATH);
-		startPath = startPath != null ? startPath : ROOT;
+		// Select the dir most likely to contain user's ROMS
+		String openPath;
+		prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		if (prefs.contains(ROM_DIR)) {
+			openPath = prefs.getString(ROM_DIR, ROOT);
+			
+		} else if (Filespace.isGameFolderUsed()) {
+			openPath = Filespace.getGameFolder();
+			
+		} else {
+			openPath = Filespace.getSDcard();
+		}
+		
 		if (canSelectDir) {
-			File file = new File(startPath);
+			File file = new File(openPath);
 			selectedFile = file;
 		}
-		getDir(startPath);
+		getDir(openPath);
 	}
 
 	@Override
@@ -175,10 +174,6 @@ public class FileDialog extends SherlockListActivity {
 		myPath.setText(pathString.toString());
 
 		if (!currentPath.equals(ROOT)) {
-
-			//item.add(ROOT);
-			//addItem(ROOT, R.drawable.folder);
-			//path.add(ROOT);
 
 			item.add("../");
 			addItem("../", R.drawable.updirectory);
@@ -276,6 +271,7 @@ public class FileDialog extends SherlockListActivity {
 			}
 		} else {
 			selectedFile = file;
+			prefs.edit().putString(ROM_DIR, file.getParent()).commit();
 			v.setSelected(true);
 			getIntent().putExtra(RESULT_PATH, selectedFile.getPath());
 			setResult(RESULT_OK, getIntent());
