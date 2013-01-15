@@ -155,7 +155,7 @@ public class FileDialog extends SherlockListActivity {
 		File f = new File(currentPath);
 		File[] files = f.listFiles();
 		if (files == null) {
-			currentPath = ROOT;
+			currentPath = Filespace.getSDcard();
 			f = new File(currentPath);
 			files = f.listFiles();
 		}
