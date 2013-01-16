@@ -1,186 +1,204 @@
 <resources>
     
 	<!-- Release 1 -->
-    <string name="app_name">ANDSemu</string>
-    <string name="title_activity_main">ANDSemu</string>
-	<string name="rom_error">读取ROM出错(</string>
-	<string name="OK">确定</string>
-	<string name="location">定位</string>
-    <string name="cant_read_folder">无法读取文件夹</string>
-    <string name="cancel">取消</string>
-    <string name="no_data">无数据</string>
-    <string name="Load">读取</string>
-    <string name="QuickSave">快速保存</string>
-    <string name="QuickRestore">快速恢复</string>
-    <string name="SaveState">保存状态</string>
-    <string name="RestoreState">恢复状态</string>
-    <string name="Settings">设定</string>
+    <string name="app_name">"ANDSemu"</string>
+    <string name="title_activity_main">"ANDSemu"</string>
+	<string name="rom_error">"读取ROM出错（"</string>
+	<string name="OK">"确定"</string>
+	<string name="location">"定位"</string>
+    <string name="cant_read_folder">"无法读取文件夹"</string>
+    <string name="cancel">"取消"</string>
+    <string name="no_data">"无数据"</string>
+    <string name="Load">"读取"</string>
+    <string name="QuickSave">"快速保存"</string>
+    <string name="QuickRestore">"快速恢复"</string>
+    <string name="SaveState">"保存状态"</string>
+    <string name="RestoreState">"恢复状态"</string>
+    <string name="Settings">"设定"</string>
     
     <!-- Release 2 -->
-    <string name="touchnotify">请点击顶部的“点击”按钮以切换键盘和触屏模式</string>
-    <string name="frameskip">跳帧</string>
-    <string name="frameskipdesc">在模拟状态下跳过多少帧，可以加速实现实时仿真</string>
-    <string name="vsync">VSync</string>
-    <string name="vsyncdesc">只在帧间绘制屏幕. 可以减慢仿真，如关闭会导致图像故障</string>
-    <string name="fps">显示 FPS</string>
-    <string name="fpsdesc">绘制 FPS 到屏幕</string>
+    <string name="touchnotify">"请点击顶部的“点击”按钮以切换键盘和触屏模式"</string>
+    <string name="frameskip">"跳帧"</string>
+    <string name="frameskipdesc">"在模拟状态下跳过多少帧，可以加速实现实时仿真"</string>
+    <string name="vsync">"垂直同步"</string>
+    <string name="vsyncdesc">"只在帧间绘制屏幕。可以减慢仿真，如关闭会导致图像故障"</string>
+    <string name="fps">"显示FPS"</string>
+    <string name="fpsdesc">"绘制FPS到屏幕"</string>
     
     <!-- Release 3 -->
-    <string name="loading">加载中</string>    
+    <string name="loading">"加载中"</string>    
     
     <!-- Release 4 -->
-    <string name="filter">屏幕过滤器</string>
-    <string name="filterdesc">过滤器用于调节屏幕分比率，在从任天堂DS屏幕转换到现有屏幕，高分辨率的过滤器会影响渲染性能.</string>
+    <string name="filter">"屏幕过滤器"</string>
+    <string name="filterdesc">"过滤器用于调节屏幕分比率，在从任天堂DS屏幕转换到现有屏幕，高分辨率的过滤器会影响渲染性能."</string>
     
     <!-- Release 5 -->
-    <string name="threedrenderer">三维渲染器</string>
-    <string name="threedrendererdesc">选择三维渲染引擎</string>
-    <string-array name ="threed_options">
-        <item>无</item>
-        <item>OpenGL</item>
-        <item>软件</item>
+    <string name="threedrenderer">"三维渲染器"</string>
+    <string name="threedrendererdesc">"选择三维渲染引擎"</string>
+    <string-array name="threed_options">
+        <item>"无"</item>
+        <item>"OpenGL"</item>
+        <item>"软件"</item>
     </string-array>
-    <string name="sound">开启声音</string>
-    <string name="sounddesc">开启音频回放和音频处理。关闭此项可以提高性能</string>
-    <string name="soundmsg">是否需要开启声音? 这会导致降低 3 到5 FPS 的性能</string>
-    <string name="yes">是</string>
-    <string name="no">否</string>
+    <string name="sound">"开启声音"</string>
+    <string name="sounddesc">"开启音频回放和音频处理。关闭此项可以提高性能"</string>
+    <string name="soundmsg">"是否需要开启声音？这会导致降低3到5 FPS的性能"</string>
+    <string name="yes">"是"</string>
+    <string name="no">"否"</string>
     
     <!-- Release 8 -->
-    <string name="Display">Display</string>
-    <string name="Controls">Controls</string>
-    <string name="EditLayout">Edit controls layout</string>
-    <string name="EditLayoutDesc">Edit where the touch controls are placed on the screen.</string>
-    <string name="UseTouchPort">Portrait touch buttons</string>
-    <string name="UseTouchPortDesc">Use touch buttons on the screen in portrait mode.</string>
-    <string name="UseTouchLand">Landscape touch buttons</string>
-    <string name="UseTouchLandDesc">Use touch buttons on the screen in landscape mode.</string>
-    <string name="ResetLayout">Reset controls layout</string>
-    <string name="ResetLayoutDesc">Reset the layout of touch controls to their defaults.</string>
-    <string name="Sound">Sound</string>
-    <string name="LCDSwap">Swap LCDs</string>
-    <string name="LCDSwapDesc">Check to swap the location of the main and touch LCDs.</string>
-    <string name="ButtonTrans">Button transparency</string>
-    <string name="ButtonTransDesc">How transparent the on-screen touch buttons should be</string>
-    <string name="Haptic">Haptic feedback</string>
-    <string name="HapticDesc">Provide haptic feedback on button press if supported by device.</string>
-    <string name="KeymapDialogDesc">Press a key to to map to this button</string>
-    <string name="KeymapValuePreface">Currently mapped to</string>
-    <string name="EditKeymap">Edit key mappings</string>
-    <string name="EditKeymapDesc">Edit mappings from hardware keys to DS buttons.</string>
-    <string name="Up">Up</string>
-    <string name="Down">Down</string>
-    <string name="Left">Left</string>
-    <string name="Right">Right</string>
-    <string name="A">A</string>
-    <string name="B">B</string>
-    <string name="X">X</string>
-    <string name="Y">Y</string>
-    <string name="Select">Start</string>
-    <string name="Start">Select</string>
-    <string name="L">L</string>
-    <string name="R">R</string>
-    <string name="Touch">Touch</string>
+    <string name="Display">"显示"</string>
+    <string name="Controls">"控制"</string>
+    <string name="EditLayout">"编辑控件布局"</string>
+    <string name="EditLayoutDesc">"编辑在触摸控件放置在屏幕上。"</string>
+    <string name="UseTouchPort">"纵向触摸式按键"</string>
+    <string name="UseTouchPortDesc">"使用触摸式按键，在屏幕上以纵向模式。"</string>
+    <string name="UseTouchLand">"景观触摸式按键"</string>
+    <string name="UseTouchLandDesc">"在横向模式下使用触摸式按键在屏幕上。"</string>
+    <string name="ResetLayout">"复位控制布局"</string>
+    <string name="ResetLayoutDesc">"的触摸控件的布局重置为默认值。"</string>
+    <string name="Sound">"最佳音响"</string>
+    <string name="LCDSwap">"交换液晶显示器"</string>
+    <string name="LCDSwapDesc">"检查交换的主要位置和触摸液晶显示器。"</string>
+    <string name="ButtonTrans">"按钮透明度"</string>
+    <string name="ButtonTransDesc">"屏幕上的触摸按钮应该是如何透明"</string>
+    <string name="Haptic">"触觉反馈"</string>
+    <string name="HapticDesc">"按下按钮，如果支持的设备提供触觉反馈。"</string>
+    <string name="KeymapDialogDesc">"按一个键映射到该按钮"</string>
+    <string name="KeymapValuePreface">"目前映射到"</string>
+    <string name="EditKeymap">"编辑键映射"</string>
+    <string name="EditKeymapDesc">"编辑从硬件按键的映射到DS按钮。"</string>
+    <string name="Up">"Up"</string>
+    <string name="Down">"Down"</string>
+    <string name="Left">"Left"</string>
+    <string name="Right">"Right"</string>
+    <string name="A">"A"</string>
+    <string name="B">"B"</string>
+    <string name="X">"X"</string>
+    <string name="Y">"Y"</string>
+    <string name="Select">"Start"</string>
+    <string name="Start">"Select"</string>
+    <string name="L">"L"</string>
+    <string name="R">"R"</string>
+    <string name="Touch">"触摸"</string>
     
     <!-- Release 10 -->
-    <string name="DontRotateLCDs">Don\'t rotate LCDs</string>
-    <string name="DontRotateLCDsDesc">In landscape mode, don\'t rotate the game LCDs. Use this for games that were intended to played with the DS held sideways.</string>
-    <string name="Language">Language</string>
-    <string name="LanguageDesc">The language of the system. Multilingual ROMs use this setting. Changes will be applied on the next ROM load.</string>
-    <string name="Gameplay">Gameplay</string>
+    <string name="DontRotateLCDs">"不要旋转液晶显示器"</string>
+    <string name="DontRotateLCDsDesc">"在横向模式下，不旋转液晶显示器的游戏。这个游戏的目的是要发挥侧身举行的DS。"</string>
+    <string name="Language">"语言"</string>
+    <string name="LanguageDesc">"系统的语言。多语言ROM的使用此设置。更改将被应用到未来的ROM负荷。"</string>
+    <string name="Gameplay">"游戏操作"</string>
     
     <!-- Release 11 -->
-    <string name="AddCheat">Add a new Action Replay cheat</string>
-    <string name="Cheats">Cheats</string>
-    <string name="Exit">Exit</string>
-    <string name="Edit">Edit</string>
-    <string name="Delete">Delete</string>
-    <string name="Description">Description</string>
+    <string name="AddCheat">"添加一个新的金手指"</string>
+    <string name="Cheats">"作弊码"</string>
+    <string name="Exit">"出口"</string>
+    <string name="Edit">"修改"</string>
+    <string name="Delete">"删除"</string>
+    <string name="Description">"简介"</string>
     
     <!-- Release 12 -->
-    <string name="EnableMicrophone">Enable microphone</string>
-    <string name="EnableMicrophoneDesc">Use your device\'s microphone as the DS microphone.</string>
-    <string name="AlwaysTouch">Always allow touch</string>
-    <string name="AlwaysTouchDesc">Always process the DS touchscreen, even when not in touch mode. For games that require using controls and touchscreen at the same time.</string>
+    <string name="EnableMicrophone">"启用麦克风"</string>
+    <string name="EnableMicrophoneDesc">"使用DS麦克风装置的麦克风。"</string>
+    <string name="AlwaysTouch">"总是允许触摸"</string>
+    <string name="AlwaysTouchDesc">"一定要处理的DS触摸屏，即使在触摸模式。对于游戏，需要在同一时间使用的控制和触摸屏。"</string>
     
     <!-- Release 14 -->
-    <string name="CheatCode">Code</string>
-    <string name="CurrentValue">Current value</string>
-    <string name="ImageOfFolder">Image of file</string>
+    <string name="CheatCode">"法典"</string>
+    <string name="CurrentValue">"现值"</string>
+    <string name="ImageOfFolder">"图像文件"</string>
+    <string name="about">"ANDSemu是nds4droid的一个分支。 nds4droid又是一个端口DeSmuME的到Android由Jeffrey Quesnelle。\n\n ANDSemu是由一群大学好友collectivly团队miraie。\n\n积分：\n：杰弗里·Quesnelle（emozilla），nds4droid \ DeSmuME的，\nTeam DeSmuME的\nSykonist中的图标的白色NDS（仅用于开发）\n埃文 - 阿莫斯，他的contrabutions维基百科和我们目前的蓝胖NDS图标\n亚历山大·波诺马廖夫，Android的文件对话框\nLachlan Tychsen  - 史密斯，数学霓虹灯\ n马克西姆Shemanarev，反谷物几何（AGG）\np7zip和7zip的，强大的存档"</string>
+	<string name="thankyou">"谢谢！"</string>
+	
+	<!-- Release m16 -->
+	<string name="CallToPlay">"开始游戏！"</string>
+	<string name="ResumeGame">"继续游戏"</string>
+    <string name="CallToLoadAutosave">"播放最后自动保存"</string>
+    <string name="QuickSettings">"快速设置"</string>
+    <string name="AllSettings">"所有设置"</string>
+    <string name="Autosaves">"自动保存"</string>
+    <string name="NoAutosaves">"还没有自动保存"</string>
+    <string name="About">"关于"</string>
+    
+    <!-- Release m17 -->
+    <string name="Pause">"暂停"</string>
+    <string name="Resume">"续传"</string>
+    <string name="NdsLikeLandscape">"NDS般的风景"</string>
+    <string name="NdsLikeLandscapeDesc">"在堆栈的顶部横向屏幕上方屏幕的底部。控件将被旁边的屏幕上。"</string>
     
     <!-- Do not translate -->
     <string-array name="filternames">
-        <item>Normal</item>
-		<item>HQ2x</item>
-		<item>2XSaI</item>
-		<item>Super2XSaI</item>
-		<item>SuperEagle</item>
-		<item>Scanline</item>
-		<item>Bilinear</item>
-		<item>Nearest 2X</item>
-		<item>HQ2xS</item>
-		<item>LQ2x</item>
-		<item>LQ2xS</item>
-        <item>EPX</item>
-        <item>Nearest+ 1.5X</item>
-        <item>Nearest 1.5X</item>
-        <item>EPX+</item>
-        <item>EPX 1.5X</item>
-        <item>EPX+ 1.5X</item>
-        <item>HQ4x</item>
+        <item>"普通"</item>
+		<item>"HQ2x"</item>
+		<item>"2XSaI"</item>
+		<item>"Super2XSaI"</item>
+		<item>"SuperEagle"</item>
+		<item>"Scanline"</item>
+		<item>"Bilinear"</item>
+		<item>"Nearest 2X"</item>
+		<item>"HQ2xS"</item>
+		<item>"LQ2x"</item>
+		<item>"LQ2xS"</item>
+        <item>"EPX"</item>
+        <item>"Nearest+ 1.5X"</item>
+        <item>"Nearest 1.5X"</item>
+        <item>"EPX +"</item>
+        <item>"EPX 1.5X"</item>
+        <item>"EPX + 1.5X"</item>
+        <item>"HQ4x"</item>
     </string-array>
         <string-array name="zerothroughnine">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
+        <item>"0"</item>
+        <item>"【注1】ssss"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
     </string-array>
     <string-array name="zerothroughseventeen">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17"</item>
     </string-array>
    	<string-array name="zerothroughtwo">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
     </string-array>
     <string-array name="languages">
-        <item>日本語</item>
-        <item>English</item>
-        <item>Français</item>
-        <item>Deutsch</item>
-        <item>Italiano</item>
-        <item>Español</item>
+        <item>"日本語"</item>
+        <item>"English"</item>
+        <item>"Français"</item>
+        <item>"Deutsch"</item>
+        <item>"Italiano"</item>
+        <item>"Español "</item>
     </string-array>
     <string-array name="zerothroughfive">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
     </string-array>
     
 </resources>
