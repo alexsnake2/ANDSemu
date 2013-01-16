@@ -9,7 +9,7 @@ find_adb()
 	FOUND=$(find ~/ -path "*/platform-tools/adb")
 	NUM_FOUND=$(find ~/ -path "*/platform-tools/adb" | wc -l)
 	if [ "$NUM_FOUND" !=  "1" ]; then
-		echo "ERROR: Found $1 results for adb search"
+		echo "ERROR: more/less than 1 results found for adb"
 		return 1
 	else
 		ADB_PATH="$FOUND"
@@ -21,10 +21,10 @@ find_adb()
 find_gprof()
 {
 	FIND_STR="*/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gprof"
-	FOUND=$(find ~ -path "$FIND_STR")
-	NUM_FOUND=$(find ~ -path "$FIND_STR" | wc -l)
+	FOUND=$(find ~/ -path "$FIND_STR")
+	NUM_FOUND=$(find ~/ -path "$FIND_STR" | wc -l)
 	if [ "$NUM_FOUND" != "1" ]; then
-		echo "ERROR: Found $1 results for gprop"
+		echo "ERROR: more/less than 1 results found for gprop"
 		return 1
 	else
 		GPROF_PATH="$FOUND"
