@@ -25,6 +25,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 @SuppressLint("UseSparseArrays")
 class Button {
@@ -46,6 +47,20 @@ class Button {
 		this.id = id;
 		this.bitmap = bitmap;
 	}
+	static int screen_height;
+	static int screen_width;
+	static int R_height = 90, L_height = 90;
+	static int R_width = 160, L_width = 160;
+	static int DPAD_height = 314;
+	static int DPAD_width = 334;
+	static int ABXY_height = 317;
+	static int ABXY_width = 362;
+	static int START_height = 65;
+	static int START_width = 96;
+	static int SELECT_height = 63;
+	static int SELECT_width = 85;
+	static int TOUCH_height = 69;
+	static int TOUCH_width = 121;
 	
 	static final Button L_PORT_DEFAULT = new Button(new Rect(0, 590, 160, 680), Button.BUTTON_L);
 	static final Button R_PORT_DEFAULT = new Button(new Rect(610, 590, 768, 680), Button.BUTTON_R);
@@ -55,19 +70,39 @@ class Button {
 	static final Button START_PORT_DEFAULT = new Button(new Rect(270, 1082, 366, 1147), Button.BUTTON_START);
 	static final Button SELECT_PORT_DEFAULT = new Button(new Rect(400, 1082, 485, 1145), Button.BUTTON_SELECT);
 
-	static final Button L_LAND_DEFAULT = new Button(new Rect(25, 0, 185, 90), Button.BUTTON_L);
-	static final Button R_LAND_DEFAULT = new Button(new Rect(1350, 0, 1511, 90), Button.BUTTON_R);
-	static final Button DPAD_LAND_DEFAULT = new Button(new Rect(25, 262, 359, 576), Button.BUTTON_DPAD);
-	static final Button ABXY_LAND_DEFAULT = new Button(new Rect(1150, 259, 1511, 576), Button.BUTTON_ABXY);
-	static final Button START_LAND_DEFAULT = new Button(new Rect(828, 511, 924, 576), Button.BUTTON_START);
-	static final Button TOUCH_LAND_DEFAULT = new Button(new Rect(708, 511, 828, 576), Button.BUTTON_TOUCH);
-	static final Button SELECT_LAND_DEFAULT = new Button(new Rect(623, 511, 708, 576), Button.BUTTON_SELECT);
+	static Button L_LAND_DEFAULT;
+	static Button R_LAND_DEFAULT;
+	static Button DPAD_LAND_DEFAULT;
+	static Button ABXY_LAND_DEFAULT;
+	static Button START_LAND_DEFAULT;
+	static Button TOUCH_LAND_DEFAULT;
+	static Button SELECT_LAND_DEFAULT;
+	
+	public static void generateDefaultLandscape(int height, int width) {
+		screen_height = height;
+		screen_width = width;
+
+		int sep = 25;
+		L_LAND_DEFAULT = new Button(new Rect(sep, sep, L_width + sep, L_height + sep), Button.BUTTON_L);
+		R_LAND_DEFAULT = new Button(new Rect(width - R_width - sep, sep, width - sep, R_height + sep), Button.BUTTON_R);
+		DPAD_LAND_DEFAULT = new Button(new Rect(sep, height - DPAD_height - sep,
+												DPAD_width + sep, height - sep), Button.BUTTON_DPAD);
+		ABXY_LAND_DEFAULT = new Button(new Rect(width - ABXY_width - sep, height - ABXY_height - sep,
+												width - sep, height - sep), Button.BUTTON_ABXY);
+		int mid = width / 2;
+		int off = TOUCH_width / 2;
+		START_LAND_DEFAULT = new Button(new Rect(mid + off, height - START_height - sep,
+												 mid + off + START_width, height - sep), Button.BUTTON_START);
+		TOUCH_LAND_DEFAULT = new Button(new Rect(mid - off, height - TOUCH_height - sep, mid + off, height - sep), Button.BUTTON_TOUCH);
+		SELECT_LAND_DEFAULT = new Button(new Rect(mid - off - SELECT_width, height - sep - SELECT_height,
+												  mid - off, height - sep), Button.BUTTON_SELECT);
+	}
 	
 	
-	static final HashMap<Integer, Button> portraitToDefault;
-	static final HashMap<Integer, Button> landscapeToDefault;
+	static HashMap<Integer, Button> portraitToDefault;
+	static HashMap<Integer, Button> landscapeToDefault;
 	
-	static {
+	static void genHashmap() {
 		portraitToDefault = new HashMap<Integer, Button>();
 		portraitToDefault.put(Button.BUTTON_L, L_PORT_DEFAULT);
 		portraitToDefault.put(Button.BUTTON_R, R_PORT_DEFAULT);

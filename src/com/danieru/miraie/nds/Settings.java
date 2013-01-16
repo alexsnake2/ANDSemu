@@ -97,7 +97,7 @@ public class Settings extends SherlockPreferenceActivity {
 	static void applyLayoutDefaults(SharedPreferences prefs, boolean overwrite) {
 		SharedPreferences.Editor edit = prefs.edit();
 		for(Entry<Integer, Button> button : Button.portraitToDefault.entrySet()) {
-			final String prefBase = "Controls.Portrait." + Button.getButtonName(button.getValue().id);
+			String prefBase = "Controls.Portrait." + Button.getButtonName(button.getValue().id);
 			if(!overwrite && prefs.contains(prefBase + ".Left"))
 				continue;
 			edit.remove(prefBase + ".Left");
@@ -108,7 +108,7 @@ public class Settings extends SherlockPreferenceActivity {
 		if(overwrite || !prefs.contains("Controls.Portrait.Draw"))
 				edit.putBoolean("Controls.Portrait.Draw", true);
 		for(Entry<Integer, Button> button : Button.landscapeToDefault.entrySet()) {
-			final String prefBase = "Controls.Landscape." + Button.getButtonName(button.getValue().id);
+			String prefBase = "Controls.Landscape." + Button.getButtonName(button.getValue().id);
 			if(!overwrite && prefs.contains(prefBase + ".Left"))
 				continue;
 			edit.remove(prefBase + ".Left");
@@ -235,7 +235,6 @@ public class Settings extends SherlockPreferenceActivity {
 				lang = 5;
 			editor.putString(LANGUAGE, String.valueOf(lang));
 		}
-		applyLayoutDefaults(prefs, false);
 		applyMappingDefaults(prefs, false);
 		try {
 			PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName(), 0);

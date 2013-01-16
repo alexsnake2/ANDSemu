@@ -31,6 +31,7 @@ import android.util.SparseIntArray;
 import android.view.HapticFeedbackConstants;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
+import android.view.View;
 
 class Controls {
 	
@@ -44,10 +45,12 @@ class Controls {
 	
 	Controls(NDSView view) {
 		this.view = view;
+		generateRuntimeDefaults(view);
 	}
 	
 	public void setView(NDSView view) {
 		this.view = view;
+		generateRuntimeDefaults(view);
 	}
 	
 	Button touchButton;
@@ -160,10 +163,31 @@ class Controls {
 				);
 	}
 	
+
+	//These coordinates are in our real screen coordinate space.
+	public static Rect defaultPortSpace;
+	public static Rect defaultLandSpace;
 	
-	//These coordinates are in our "native" coordinate space, which was arbitrarily chosen to be 768x1152 (exactly four times the DS native resolution)
-	public static final Rect defaultPortSpace = new Rect(0, 0, 768, 1152);
-	public static final Rect defaultLandSpace = new Rect(0, 0, 1536, 576);
+	public static void generateRuntimeDefaults(View screen) {
+		int height = screen.getHeight();
+		int width = screen.getWidth();
+		if (height == 0 || width == 0)
+			return;
+		
+		// if we are in landscape mode normalise to portrait
+		if (width > height) {
+			int tmp = height;
+			height = width;
+			width = tmp;
+		}
+		
+		defaultPortSpace = new Rect(0, 0, width, height);
+		defaultLandSpace = new Rect(0, 0, height, width);
+		Button.generateDefaultLandscape(width, height);
+		Button.genHashmap();
+		Settings.applyLayoutDefaults(
+						PreferenceManager.getDefaultSharedPreferences(screen.getContext()), false);
+	}
 	
 	
 	//These are the final on/off values that will get sent to the emulator.
@@ -351,9 +375,12 @@ class Controls {
 			return;
 		if(currentAlpha != view.buttonAlpha)
 			controlsPaint.setAlpha(currentAlpha = view.buttonAlpha);
+		float xscale = Button.screen_height / ((float)canvas.getHeight());
+		float yscale = Button.screen_width / ((float)canvas.getWidth());
+		
 		if(DeSmuME.touchScreenMode) {
 			if(touchButton.bitmap != null)
-				canvas.drawBitmap(touchButton.bitmap, touchButton.position.left, touchButton.position.top, controlsPaint);
+				canvas.drawBitmap(touchButton.bitmap, touchButton.position.left * xscale, touchButton.position.top * yscale, controlsPaint);
 		}
 		else {
 			for(Button button : buttonsToDraw)  {

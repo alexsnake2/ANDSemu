@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -22,14 +23,15 @@ public class HomeActivity extends SherlockActivity implements OnSharedPreference
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
 		Filespace.prepFolders();
+		
+	    setContentView(R.layout.home);
 
-		Settings.applyDefaults(this);
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		prefs.registerOnSharedPreferenceChangeListener(this);
+		Settings.applyDefaults(this);
 		
-		super.onCreate(savedInstanceState);
-	    setContentView(R.layout.home);
 	    updateQuickSettings(prefs);
 	    
 	    if (gameRunning)
