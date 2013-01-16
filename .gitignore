@@ -1,6 +1,6 @@
 # -- nds4droid ignores --
 # ndk build files but not ActionBarSherlock
-!libs/ActionBarSherlock*
+!libs/ActionBarSherlock-4.2.0/*
 libs/*
 obj/
 
@@ -63,3 +63,6 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+#Gedit saves
+~*
