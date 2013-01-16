@@ -1,7 +1,7 @@
 # -- nds4droid ignores --
 # ndk build files but not ActionBarSherlock
-!libs/ActionBarSherlock-4.2.0/*
 libs/*
+!libs/ActionBarSherlock-4.2.0
 obj/
 
 # eclipse auto-generated yet useless
