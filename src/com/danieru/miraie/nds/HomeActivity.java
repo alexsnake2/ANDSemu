@@ -107,6 +107,7 @@ public class HomeActivity extends SherlockActivity implements OnSharedPreference
 	        	AlertDialog aboutDialog = builder.show();
 	        	TextView textView = (TextView) aboutDialog.findViewById(android.R.id.message);
 	            textView.setTextSize(14);
+	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }

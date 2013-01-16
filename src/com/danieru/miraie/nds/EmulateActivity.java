@@ -53,6 +53,7 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 
 	static EmulatorThread coreThread;
 	static Controls controls;
+	boolean paused = false;
 	NDSView view;
 	Dialog loadingDialog = null;
 	
@@ -232,7 +233,16 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 		case R.id.cheats:
 			startActivity(new Intent(this, Cheats.class));
 			break;
-				default:
+		case R.id.pause:
+			if(!paused){
+				pauseEmulation();
+				paused = true;
+				return true;
+			}else{
+				paused=false;
+			}					
+			break;
+		default:
 			return false;
 		}
 		runEmulation();
