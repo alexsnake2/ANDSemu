@@ -17,6 +17,9 @@ package com.danieru.miraie.nds;
 	along with the this software.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 import com.actionbarsherlock.app.*;
 import com.actionbarsherlock.view.*;
 import android.annotation.SuppressLint;
@@ -159,8 +162,12 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 	    super.onConfigurationChanged(newConfig);
 	    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 	}
-	
+
+	/* lock to avoid crash on rapid pause and stores */
+	private final ReentrantLock runEmuLock = new ReentrantLock();
 	void runEmulation() {
+		runEmuLock.lock();
+		
 		boolean created = false;
 		if(coreThread == null) {
 			coreThread = new EmulatorThread(this);
@@ -168,18 +175,22 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 		}
 		else
 			coreThread.setCurrentActivity(this);
+		
 		coreThread.setPause(!DeSmuME.romLoaded);
 		if(created)
 			coreThread.start();
 		else
 			coreThread.changeSound(prefs.getBoolean(Settings.ENABLE_SOUND, false) ? 1 : 0);
+		runEmuLock.unlock();
 	}
 	
 	void pauseEmulation() {
+		runEmuLock.lock();
 		if(coreThread != null) {
 			coreThread.changeSound(0);
 			coreThread.setPause(true);
 		}
+		runEmuLock.unlock();
 	}
 	
 	@Override
