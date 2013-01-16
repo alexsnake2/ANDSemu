@@ -20,7 +20,7 @@ find_adb()
 
 find_gprof()
 {
-	FIND_STR="*/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/arm-linux-androideabi-gprof"
+	FIND_STR="*/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin/[m"
 	FOUND=$(find ~/ -path "$FIND_STR")
 	NUM_FOUND=$(find ~/ -path "$FIND_STR" | wc -l)
 	if [ "$NUM_FOUND" != "1" ]; then
@@ -38,7 +38,7 @@ exec_cmds()
 	if [ $? -eq 0 ]; then
 		$GPROF_PATH obj/local/armeabi-v7a/libdesmumeneon.so > report.txt
 	else
-		echo "aborting..."
+		echo "Error: adb pull failed"
 		return 1
 	fi
 }
