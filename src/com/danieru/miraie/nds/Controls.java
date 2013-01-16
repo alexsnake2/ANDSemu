@@ -95,7 +95,7 @@ class Controls {
 		
 		this.landscape = landscape;
 		
-		final Rect space = landscape ? defaultLandSpace : defaultPortSpace;
+		Rect space = landscape ? defaultLandSpace : defaultPortSpace;
 		
 		final Button l = Button.load(context, Button.BUTTON_L, R.drawable.l, landscape, is565, screen, space, false);
 		if(l.bitmap != null) {
@@ -183,7 +183,7 @@ class Controls {
 		
 		defaultPortSpace = new Rect(0, 0, width, height);
 		defaultLandSpace = new Rect(0, 0, height, width);
-		Button.generateDefaultLandscape(width, height);
+		Button.generateDefaultLayout(height, width);
 		Button.genHashmap();
 		Settings.applyLayoutDefaults(
 						PreferenceManager.getDefaultSharedPreferences(screen.getContext()), false);

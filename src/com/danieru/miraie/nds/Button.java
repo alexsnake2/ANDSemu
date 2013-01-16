@@ -62,13 +62,38 @@ class Button {
 	static int TOUCH_height = 69;
 	static int TOUCH_width = 121;
 	
-	static final Button L_PORT_DEFAULT = new Button(new Rect(0, 590, 160, 680), Button.BUTTON_L);
-	static final Button R_PORT_DEFAULT = new Button(new Rect(610, 590, 768, 680), Button.BUTTON_R);
-	static final Button TOUCH_PORT_DEFAULT = new Button(new Rect(320, 590, 441, 659), Button.BUTTON_TOUCH);
-	static final Button DPAD_PORT_DEFAULT = new Button(new Rect(0, 760, 334, 1074), Button.BUTTON_DPAD);
-	static final Button ABXY_PORT_DEFAULT = new Button(new Rect(397, 755, 759, 1072), Button.BUTTON_ABXY);
-	static final Button START_PORT_DEFAULT = new Button(new Rect(270, 1082, 366, 1147), Button.BUTTON_START);
-	static final Button SELECT_PORT_DEFAULT = new Button(new Rect(400, 1082, 485, 1145), Button.BUTTON_SELECT);
+	public static void generateDefaultLayout(int height, int width) {
+		screen_height = height;
+		screen_width = width;
+		
+		generateDefaultPortrait(height, width);
+		generateDefaultLandscape(width, height);
+	}
+	static Button L_PORT_DEFAULT;
+	static Button R_PORT_DEFAULT;
+	static Button TOUCH_PORT_DEFAULT;
+	static Button DPAD_PORT_DEFAULT;
+	static Button ABXY_PORT_DEFAULT;
+	static Button START_PORT_DEFAULT;
+	static Button SELECT_PORT_DEFAULT;
+	
+	private static void generateDefaultPortrait(int height, int width) {
+		int sep = 25;
+		int vmid = height / 2;
+		L_PORT_DEFAULT = new Button(new Rect(sep, vmid + sep, L_width + sep, vmid + L_height + sep), Button.BUTTON_L);
+		R_PORT_DEFAULT = new Button(new Rect(width - R_width - sep, vmid + sep, width - sep, vmid + R_height + sep), Button.BUTTON_R);
+		DPAD_PORT_DEFAULT = new Button(new Rect(sep, height - DPAD_height - sep,
+												DPAD_width + sep, height - sep), Button.BUTTON_DPAD);
+		ABXY_PORT_DEFAULT = new Button(new Rect(width - ABXY_width - sep, height - ABXY_height - sep,
+												width - sep, height - sep), Button.BUTTON_ABXY);
+		int mid = width / 2;
+		int off = TOUCH_width / 2;
+		START_PORT_DEFAULT = new Button(new Rect(mid + off, vmid + sep,
+												 mid + off + START_width, vmid + START_height + sep), Button.BUTTON_START);
+		TOUCH_PORT_DEFAULT = new Button(new Rect(mid - off, vmid  + sep, mid + off, vmid + TOUCH_height + sep), Button.BUTTON_TOUCH);
+		SELECT_PORT_DEFAULT = new Button(new Rect(mid - off - SELECT_width, vmid + sep,
+												  mid - off, vmid + sep + SELECT_height), Button.BUTTON_SELECT);
+	}
 
 	static Button L_LAND_DEFAULT;
 	static Button R_LAND_DEFAULT;
@@ -78,10 +103,7 @@ class Button {
 	static Button TOUCH_LAND_DEFAULT;
 	static Button SELECT_LAND_DEFAULT;
 	
-	public static void generateDefaultLandscape(int height, int width) {
-		screen_height = height;
-		screen_width = width;
-
+	private static void generateDefaultLandscape(int height, int width) {
 		int sep = 25;
 		L_LAND_DEFAULT = new Button(new Rect(sep, sep, L_width + sep, L_height + sep), Button.BUTTON_L);
 		R_LAND_DEFAULT = new Button(new Rect(width - R_width - sep, sep, width - sep, R_height + sep), Button.BUTTON_R);
