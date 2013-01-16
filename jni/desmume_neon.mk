@@ -109,9 +109,11 @@ LOCAL_CFLAGS			:= -DANDROID -DHAVE_LIBAGG -DHAVE_LIBZ -DHAVE_NEON=1 -mfloat-abi=
 LOCAL_STATIC_LIBRARIES 	:= aggneon mathneon sevenzip 
 LOCAL_LDLIBS 			:= -llog -lz -lGLESv1_CM -lEGL -ljnigraphics -lOpenSLES -landroid 
 
+# To enable profiling uncomment
+PROFILE := 1
 ifdef PROFILE
 -include android-ndk-profiler.mk
-LOCAL_CFLAGS += -pg -DPROFILING
+LOCAL_CFLAGS += -pg -DPROFILING -fno-omit-frame-pointer
 LOCAL_STATIC_LIBRARIES += andprof
 LOCAL_LDLIBS += -L$(call host-path, $(LOCAL_PATH))/$(TARGET_ARCH_ABI) -landprof
 endif
