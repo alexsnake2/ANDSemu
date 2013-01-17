@@ -192,19 +192,24 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 		}
 		runEmuLock.unlock();
 	}
-	
+
+	private final ReentrantLock resumeLock = new ReentrantLock();
 	@Override
 	public void onResume() {
+		resumeLock.lock();
 		super.onResume();
 		runEmulation();
+		resumeLock.unlock();
 	}
 	
 	@Override
 	public void onPause() {
+		resumeLock.lock();
 		super.onPause();
 		pauseEmulation();
 		coreThread.scheduleSoundPause();
 		coreThread.scheduleAutosave();
+		resumeLock.unlock();
 	}
 	
 	@Override

@@ -110,7 +110,7 @@ LOCAL_STATIC_LIBRARIES 	:= aggneon mathneon sevenzip
 LOCAL_LDLIBS 			:= -llog -lz -lGLESv1_CM -lEGL -ljnigraphics -lOpenSLES -landroid 
 
 # To enable profiling uncomment
-PROFILE := 1
+#PROFILE := 1
 ifdef PROFILE
 -include android-ndk-profiler.mk
 LOCAL_CFLAGS += -pg -DPROFILING -fno-omit-frame-pointer
