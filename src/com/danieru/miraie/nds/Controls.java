@@ -181,6 +181,14 @@ class Controls {
 			width = tmp;
 		}
 		
+		// clamp res to prevent buttons overlapping
+		int MINWIDTH = 768; //width of nexus4
+		if (width < MINWIDTH) {
+			double aspect_ratio = (double)height / (double)width;
+			width = MINWIDTH;
+			height = (int)(MINWIDTH * aspect_ratio);
+		}
+		
 		defaultPortSpace = new Rect(0, 0, width, height);
 		defaultLandSpace = new Rect(0, 0, height, width);
 		Button.generateDefaultLayout(height, width);
