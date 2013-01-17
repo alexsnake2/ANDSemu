@@ -1,186 +1,204 @@
 <resources>
 
 	<!-- Release 1 -->
-    <string name="app_name">ANDSemu</string>
-    <string name="title_activity_main">ANDSemu</string>
-	<string name="rom_error">Aconteceu um problema carregando este jogo ;(</string>
-	<string name="OK">OK</string>
-	<string name="location">Localização</string>
-    <string name="cant_read_folder">Pasta não pode ser lida</string>
-    <string name="cancel">Cancelar</string>
-    <string name="no_data">Sem dados</string>
-    <string name="Load">Selecionar</string>
-    <string name="QuickSave">Salvar rápido</string>
-    <string name="QuickRestore">Restaurar rápido</string>
-    <string name="SaveState">Salvar estado</string>
-    <string name="RestoreState">Restaurar estado</string>
-    <string name="Settings">Configurações</string>
+    <string name="app_name">"ANDSemu"</string>
+    <string name="title_activity_main">"ANDSemu"</string>
+	<string name="rom_error">"Aconteceu hum Problema carregando Este Jogo: ("</string>
+	<string name="OK">"Ok"</string>
+	<string name="location">"LOCALIZAÇÃO"</string>
+    <string name="cant_read_folder">"Pasta NAO PODE Ser lida"</string>
+    <string name="cancel">"Cancelar"</string>
+    <string name="no_data">"Sem Dados"</string>
+    <string name="Load">"Select"</string>
+    <string name="QuickSave">"SALVAR Rápido"</string>
+    <string name="QuickRestore">"Restaurar Rápido"</string>
+    <string name="SaveState">"SALVAR Estado"</string>
+    <string name="RestoreState">"Restaurar Estado"</string>
+    <string name="Settings">"Configurações"</string>
 
     <!-- Release 2 -->
-    <string name="touchnotify">Para escolher entre, tela touch e setas, aperte o botão circular touch na parte de cima.</string>
-    <string name="frameskip">Saltar Frames</string>
-    <string name="frameskipdesc">Quantos frames eu devo saltar? Ajuda a emulação alcançar a velocidade original.</string>
-    <string name="vsync">VSync</string>
-    <string name="vsyncdesc">Somente desenha na tela no espaço entre um frame e outro. Pode lentar a emulação porém desliga-lo pode causar desfunções no gráfico.</string>
-    <string name="fps">Mostrar FPS</string>
-    <string name="fpsdesc">Mostra "frames per second" na tela</string>
+    <string name="touchnotify">"Pará escolher entre, Tela de toque e Setas, aperte o Botão circular toque nd Parte de Cima."</string>
+    <string name="frameskip">"Saltar Frames"</string>
+    <string name="frameskipdesc">"Quantos quadros eu devo Saltar? Ajuda a alcançar um Emulação VELOCIDADE original."</string>
+    <string name="vsync">"VSync"</string>
+    <string name="vsyncdesc">"Somente desenha nd Tela no Espaço Entre hum quadro e Outro. PODE lentar um Emulação porem Desliga-lo PODE causar desfunções não Gráfico."</string>
+    <string name="fps">"Mostrar FPS"</string>
+    <string name="fpsdesc">"Mostra \"frames por segundo\" na Tela"</string>
     
     <!-- Release 3 -->
-    <string name="loading">Carregando</string>    
+    <string name="loading">"Carregando"</string>    
 
     <!-- Release 4 -->
-    <string name="filter">Filtro de tela</string>
-    <string name="filterdesc">Filtro quando aumentando a resolução do nds na sua tela. Aumentando diminuirá a performance.</string>
+    <string name="filter">"Filtro de Tela"</string>
+    <string name="filterdesc">"FILTRO QUANDO aumentando a Resolução DO nds NA SUA Tela. Aumentando o desempenho de um diminuirá."</string>
 
     <!-- Release 5 -->
-    <string name="threedrenderer">Suporte 3D</string>
-    <string name="threedrendererdesc">Qual driver de suporte 3D usar.</string>
-    <string-array name ="threed_options">
-        <item>Nenhuma</item>
-        <item>OpenGL</item>
-        <item>Sistema</item>
+    <string name="threedrenderer">"Suporte 3D"</string>
+    <string name="threedrendererdesc">"Qual motorista de Suporte 3D USAR."</string>
+    <string-array name="threed_options">
+        <item>"Nenhuma"</item>
+        <item>"OpenGL"</item>
+        <item>"Sistema"</item>
     </string-array>
-    <string name="sound">Ativar som</string>
-    <string name="sounddesc">Ativar processo e reprodução do áudio. Desativando pode melhorar a performance.</string>
-    <string name="soundmsg">Você tem certeza que deseja ativar o som? Ativando-o pode causar a perda de 3 a 5 Frames por segundo.</string>
-    <string name="yes">Sim</string>
-    <string name="no">Não</string>
+    <string name="sound">"Ativar som"</string>
+    <string name="sounddesc">"Ativar Processo e fazer Reprodução de áudio. Desativando PODE melhorar a performance."</string>
+    <string name="soundmsg">"Guia Você TEM Certeza Que deseja ativar o som? Ativando-o PODE causar uma Perda de 3 a 5 quadros POR Segundo."</string>
+    <string name="yes">"Sim"</string>
+    <string name="no">"Nao"</string>
     
     <!-- Release 8 -->
-    <string name="Display">Display</string>
-    <string name="Controls">Controles</string>
-    <string name="EditLayout">Editar o modo dos controles</string>
-    <string name="EditLayoutDesc">Edite a posição dos controles</string>
-    <string name="UseTouchPort">Modo de retratação</string>
-    <string name="UseTouchPortDesc">Use controles em modo de retratação.</string>
-    <string name="UseTouchLand">Modo de visualização</string>
-    <string name="UseTouchLandDesc">Use controles maiores.</string>
-    <string name="ResetLayout">Resetar controles</string>
-    <string name="ResetLayoutDesc">Resetar configurações dos controles.</string>
-    <string name="Sound">Som</string>
-    <string name="LCDSwap">Trocar LCDs</string>
-    <string name="LCDSwapDesc">Troque a localização da tela touch e a tela normal.</string>
-    <string name="ButtonTrans">Transparência dos botões</string>
-    <string name="ButtonTransDesc">Transparência dos botões na tela.</string>
-    <string name="Haptic">Haptic feedback</string>
-    <string name="HapticDesc">Fornece Haptic feedback se o aparelho suportar.</string>
-    <string name="KeymapDialogDesc">Presione uma tecla para mapear o botão</string>
-    <string name="KeymapValuePreface">Atualmente mapeado em&#8230;</string>
-    <string name="EditKeymap">Editar mapeamentos de teclas</string>
-    <string name="EditKeymapDesc">Use o mapeamento das teclas do seu celular para usar no DS.</string>
-    <string name="Up">Cima</string>
-    <string name="Down">Baixo</string>
-    <string name="Left">Esquerda</string>
-    <string name="Right">Direita</string>
-    <string name="A">A</string>
-    <string name="B">B</string>
-    <string name="X">X</string>
-    <string name="Y">Y</string>
-    <string name="Select">Start</string>
-    <string name="Start">Select</string>
-    <string name="L">L</string>
-    <string name="R">R</string>
-    <string name="Touch">Touch</string>
+    <string name="Display">"Tela"</string>
+    <string name="Controls">"Controles"</string>
+    <string name="EditLayout">"Editar o MoDo dos Controles"</string>
+    <string name="EditLayoutDesc">"Edite uma POSIÇÃO dos Controles"</string>
+    <string name="UseTouchPort">"Modo de retratação"</string>
+    <string name="UseTouchPortDesc">"Use Controles los MoDo de retratação."</string>
+    <string name="UseTouchLand">"Modo de visualização"</string>
+    <string name="UseTouchLandDesc">"Use Maiores Controles."</string>
+    <string name="ResetLayout">"Resetar Controles"</string>
+    <string name="ResetLayoutDesc">"Resetar configurações dos Controles."</string>
+    <string name="Sound">"Som"</string>
+    <string name="LCDSwap">"Trocar LCDs"</string>
+    <string name="LCDSwapDesc">"Troque a LOCALIZAÇÃO da Tela de toque ea Tela normal."</string>
+    <string name="ButtonTrans">"Transparência dos botões"</string>
+    <string name="ButtonTransDesc">"Transparência dos botões nd Tela."</string>
+    <string name="Haptic">"Feedback tátil"</string>
+    <string name="HapticDesc">"Fornece Haptic retorno se o Aparelho suportar."</string>
+    <string name="KeymapDialogDesc">"Presione UMA Tecla parágrafo mapear o Botão"</string>
+    <string name="KeymapValuePreface">"Atualmente mapeado em ..."</string>
+    <string name="EditKeymap">"Editar mapeamentos De Teclas"</string>
+    <string name="EditKeymapDesc">"Use Teclas Ø Mapeamento Das fazer Seu celular parágrafo USAR não DS."</string>
+    <string name="Up">"Cima"</string>
+    <string name="Down">"Baixo"</string>
+    <string name="Left">"Esquerda"</string>
+    <string name="Right">"Direita"</string>
+    <string name="A">"A"</string>
+    <string name="B">"B"</string>
+    <string name="X">"X"</string>
+    <string name="Y">"Y"</string>
+    <string name="Select">"Start"</string>
+    <string name="Start">"Select"</string>
+    <string name="L">"L"</string>
+    <string name="R">"R"</string>
+    <string name="Touch">"To"</string>
     
     <!-- Release 10 -->
-    <string name="DontRotateLCDs">Don\'t rotate LCDs</string>
-    <string name="DontRotateLCDsDesc">In landscape mode, don\'t rotate the game LCDs. Use this for games that were intended to played with the DS held sideways.</string>
-    <string name="Language">Language</string>
-    <string name="LanguageDesc">The language of the system. Multilingual ROMs use this setting. Changes will be applied on the next ROM load.</string>
-    <string name="Gameplay">Gameplay</string>
+    <string name="DontRotateLCDs">"Não rode LCDs"</string>
+    <string name="DontRotateLCDsDesc">"No modo paisagem, não gire o jogo LCDs. Use isso para jogos que foram destinados para jogado com o DS realizada lateralmente."</string>
+    <string name="Language">"Idioma"</string>
+    <string name="LanguageDesc">"A linguagem do sistema. ROMs multilingues usar essa configuração. As alterações serão aplicadas sobre a carga ROM seguinte."</string>
+    <string name="Gameplay">"Jogabilidade"</string>
     
     <!-- Release 11 -->
-    <string name="AddCheat">Add a new Action Replay cheat</string>
-    <string name="Cheats">Cheats</string>
-    <string name="Exit">Exit</string>
-    <string name="Edit">Edit</string>
-    <string name="Delete">Delete</string>
-    <string name="Description">Description</string>
+    <string name="AddCheat">"Adicionar um replay cheat nova ação"</string>
+    <string name="Cheats">"trapaças"</string>
+    <string name="Exit">"Sair"</string>
+    <string name="Edit">"Edit"</string>
+    <string name="Delete">"Deletar/Apagar"</string>
+    <string name="Description">"Description"</string>
     
     <!-- Release 12 -->
-    <string name="EnableMicrophone">Enable microphone</string>
-    <string name="EnableMicrophoneDesc">Use your device\'s microphone as the DS microphone.</string>
-    <string name="AlwaysTouch">Always allow touch</string>
-    <string name="AlwaysTouchDesc">Always process the DS touchscreen, even when not in touch mode. For games that require using controls and touchscreen at the same time.</string>
+    <string name="EnableMicrophone">"Habilitar microfone"</string>
+    <string name="EnableMicrophoneDesc">"Use o microfone do dispositivo como o microfone do DS."</string>
+    <string name="AlwaysTouch">"Sempre permitir toque"</string>
+    <string name="AlwaysTouchDesc">"Sempre processar o touchscreen do DS, mesmo quando não estiver em modo de toque. Para jogos que exigem o uso de controles e ecrã táctil, ao mesmo tempo."</string>
     
     <!-- Release 14 -->
-    <string name="CheatCode">Code</string>
-    <string name="CurrentValue">Current value</string>
-    <string name="ImageOfFolder">Image of file</string>
+    <string name="CheatCode">"Codigo"</string>
+    <string name="CurrentValue">"Valor atual"</string>
+    <string name="ImageOfFolder">"Imagem de arquivo"</string>
+    <string name="about">"ANDSemu é um fork do nds4droid. nds4droid por sua vez, é uma porta de DeSmuME para Android por Jeffrey Quesnelle \n\n ANDSemu é feito por um grupo de amigos universitários collectivly conhecida como equipe miraie \n\n Créditos:.. \n Jeffrey Quesnelle (emozilla), para nds4droid \nTeam DeSmuME, para DeSmuME Sykonist \n, para o ícone do nds branco (usado somente em desenvolvimento) \n Evan-Amos, por seus contrabutions a Wikipedia e nossa atual azul gordura nds ícone \n Alexander Ponomarev, para android-file- diálogo \nLachlan Tychsen - Smith, para a matemática-neon \n Maxim Shemanarev, por Anti-Grain Geometry (AGG) \np7zip &amp; 7zip, por poderoso arquivamento"</string>
+	<string name="thankyou">"Obrigado!"</string>
+	
+	<!-- Release m16 -->
+	<string name="CallToPlay">"Toque Agora"</string>
+	<string name="ResumeGame">"Retomar jogo"</string>
+    <string name="CallToLoadAutosave">"Jogar Autosave última"</string>
+    <string name="QuickSettings">"Configurações rápidas"</string>
+    <string name="AllSettings">"Todas as Definições"</string>
+    <string name="Autosaves">"Autosaves"</string>
+    <string name="NoAutosaves">"Não autosaves ainda"</string>
+    <string name="About">"A Respeito"</string>
+    
+    <!-- Release m17 -->
+    <string name="Pause">"Pausar"</string>
+    <string name="Resume">"curriculo"</string>
+    <string name="NdsLikeLandscape">"NDS como paisagem"</string>
+    <string name="NdsLikeLandscapeDesc">"Na orientação paisagem pilha topo da tela acima da tela inferior. Os controles serão ao lado das telas."</string>
     
     <!-- Do not translate -->
     <string-array name="filternames">
-        <item>Normal</item>
-		<item>HQ2x</item>
-		<item>2XSaI</item>
-		<item>Super2XSaI</item>
-		<item>SuperEagle</item>
-		<item>Scanline</item>
-		<item>Bilinear</item>
-		<item>Nearest 2X</item>
-		<item>HQ2xS</item>
-		<item>LQ2x</item>
-		<item>LQ2xS</item>
-        <item>EPX</item>
-        <item>Nearest+ 1.5X</item>
-        <item>Nearest 1.5X</item>
-        <item>EPX+</item>
-        <item>EPX 1.5X</item>
-        <item>EPX+ 1.5X</item>
-        <item>HQ4x</item>
+        <item>"Normal"</item>
+		<item>"HQ2x"</item>
+		<item>"2xSaI"</item>
+		<item>"Super2XSaI"</item>
+		<item>"SuperEagle"</item>
+		<item>"Scanline"</item>
+		<item>"Bilinear"</item>
+		<item>"Nearest 2X"</item>
+		<item>"HQ2xS"</item>
+		<item>"LQ2x"</item>
+		<item>"LQ2xS"</item>
+        <item>"EPX"</item>
+        <item>"Nearest+ 1.5X"</item>
+        <item>"Nearest 1.5X"</item>
+        <item>"EPX +"</item>
+        <item>"EPX 1.5X"</item>
+        <item>"EPX + 1.5X"</item>
+        <item>"HQ4x"</item>
     </string-array>
         <string-array name="zerothroughnine">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
+        <item>"0  "</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3 "</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8 "</item>
+        <item>"9"</item>
     </string-array>
     <string-array name="zerothroughseventeen">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
+        <item>"0  "</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3 "</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8 "</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+        <item>"13"</item>
+        <item>"14"</item>
+        <item>"15"</item>
+        <item>"16"</item>
+        <item>"17 "</item>
     </string-array>
    	<string-array name="zerothroughtwo">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
+        <item>"0  "</item>
+        <item>"1"</item>
+        <item>"2"</item>
     </string-array>
     <string-array name="languages">
-        <item>日本語</item>
-        <item>English</item>
-        <item>Français</item>
-        <item>Deutsch</item>
-        <item>Italiano</item>
-        <item>Español</item>
+        <item>"日本语"</item>
+        <item>"English"</item>
+        <item>"Français"</item>
+        <item>"Deutsch"</item>
+        <item>"Italiano"</item>
+        <item>"Español"</item>
     </string-array>
     <string-array name="zerothroughfive">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
+        <item>"0  "</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3 "</item>
+        <item>"4"</item>
+        <item>"5"</item>
     </string-array>
     
 </resources>
