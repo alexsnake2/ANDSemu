@@ -104,7 +104,7 @@
     <string name="AlwaysTouchDesc">"いつもしないときは、タッチモードでも、DSのタッチスクリーンを処理します。同時にコントロールとタッチスクリーンを使用して必要なゲームのために。"</string>
     
     <!-- Release 14 -->
-    <string name="CheatCode">"コー​​ド"</string>
+    <string name="CheatCode">"コード"</string>
     <string name="CurrentValue">"現在値"</string>
     <string name="ImageOfFolder">"ファイルのイメージ"</string>
     <string name="about">"ANDSemuはnds4droidのフォークです。順にnds4droidはJeffrey Quesnelle Android用へのdesmumeのポートです\n\nをANDSemuがcollectivlyチームmiraieとして知られている大学の友人のグループによって行われます\n\nクレジット：。nds4droidの\nジェフリーQuesnelle（emozilla）、\ウィキペディアやAndroidのファイルのための私達の現在の青い脂肪ndsのアイコン\nのアレクサンダーポノマリョフ、彼のcontrabutionsのホワイトNDS（開発でのみ使用）\nのエヴァン·アモスのアイコンのためのdesmume \nのためのSykonist nTeamのdesmume、ダイアログ\nLachlan Tychsen  - スミス、数学ネオンます\nマキシムShemanarevため、アンチ粒ジオメトリ用（AGG）\np7zip＆7zipを、アーカイブのための強力な"</string>
@@ -118,7 +118,13 @@
     <string name="AllSettings">"すべての設定"</string>
     <string name="Autosaves">"自動保存"</string>
     <string name="NoAutosaves">"自動保存はまだありません"</string>
-    <string name="About">"このアプリについて"</string>    
+    <string name="About">"このアプリについて"</string> 
+    
+    <!-- Release m17 -->
+    <string name="Pause">休止</string>
+    <string name="Resume">再開する</string>
+    <string name="NdsLikeLandscape">NDSのような横</string>
+    <string name="NdsLikeLandscapeDesc">横向きではボトム画面上のトップ画面を積み重ねる。コントロールは、画面の側になります。</string>   
     
     <!-- Do not translate -->
     <string-array name="filternames">
