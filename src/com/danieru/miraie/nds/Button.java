@@ -21,11 +21,13 @@ import java.util.HashMap;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.util.TypedValue;
 
 @SuppressLint("UseSparseArrays")
 class Button {
@@ -62,12 +64,12 @@ class Button {
 	static int TOUCH_height = 69;
 	static int TOUCH_width = 121;
 	
-	public static void generateDefaultLayout(int height, int width) {
+	public static void generateDefaultLayout(int height, int width, int sep) {
 		screen_height = height;
 		screen_width = width;
 		
-		generateDefaultPortrait(height, width);
-		generateDefaultLandscape(width, height);
+		generateDefaultPortrait(height, width, sep);
+		generateDefaultLandscape(width, height, sep);
 	}
 	static Button L_PORT_DEFAULT;
 	static Button R_PORT_DEFAULT;
@@ -77,8 +79,7 @@ class Button {
 	static Button START_PORT_DEFAULT;
 	static Button SELECT_PORT_DEFAULT;
 	
-	private static void generateDefaultPortrait(int height, int width) {
-		int sep = 25;
+	private static void generateDefaultPortrait(int height, int width, int sep) {
 		int vmid = height / 2;
 		L_PORT_DEFAULT = new Button(new Rect(sep, vmid + sep, L_width + sep, vmid + L_height + sep), Button.BUTTON_L);
 		R_PORT_DEFAULT = new Button(new Rect(width - R_width - sep, vmid + sep, width - sep, vmid + R_height + sep), Button.BUTTON_R);
@@ -103,8 +104,7 @@ class Button {
 	static Button TOUCH_LAND_DEFAULT;
 	static Button SELECT_LAND_DEFAULT;
 	
-	private static void generateDefaultLandscape(int height, int width) {
-		int sep = 25;
+	private static void generateDefaultLandscape(int height, int width, int sep) {
 		L_LAND_DEFAULT = new Button(new Rect(sep, sep, L_width + sep, L_height + sep), Button.BUTTON_L);
 		R_LAND_DEFAULT = new Button(new Rect(width - R_width - sep, sep, width - sep, R_height + sep), Button.BUTTON_R);
 		DPAD_LAND_DEFAULT = new Button(new Rect(sep, height - DPAD_height - sep,

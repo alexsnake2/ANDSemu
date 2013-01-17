@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import com.danieru.miraie.nds.EmulateActivity.NDSView;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
@@ -28,6 +29,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
+import android.util.TypedValue;
 import android.view.HapticFeedbackConstants;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -191,7 +193,12 @@ class Controls {
 		
 		defaultPortSpace = new Rect(0, 0, width, height);
 		defaultLandSpace = new Rect(0, 0, height, width);
-		Button.generateDefaultLayout(height, width);
+
+		
+		Resources r = screen.getResources();
+		int sep = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 15, r.getDisplayMetrics());
+		Button.generateDefaultLayout(height, width, sep);
+		
 		Button.genHashmap();
 		Settings.applyLayoutDefaults(
 						PreferenceManager.getDefaultSharedPreferences(screen.getContext()), false);
@@ -383,12 +390,10 @@ class Controls {
 			return;
 		if(currentAlpha != view.buttonAlpha)
 			controlsPaint.setAlpha(currentAlpha = view.buttonAlpha);
-		float xscale = Button.screen_height / ((float)canvas.getHeight());
-		float yscale = Button.screen_width / ((float)canvas.getWidth());
 		
 		if(DeSmuME.touchScreenMode) {
 			if(touchButton.bitmap != null)
-				canvas.drawBitmap(touchButton.bitmap, touchButton.position.left * xscale, touchButton.position.top * yscale, controlsPaint);
+				canvas.drawBitmap(touchButton.bitmap, touchButton.position.left, touchButton.position.top, controlsPaint);
 		}
 		else {
 			for(Button button : buttonsToDraw)  {
