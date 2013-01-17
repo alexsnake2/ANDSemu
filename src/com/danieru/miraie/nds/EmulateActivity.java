@@ -212,10 +212,12 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 		resumeLock.unlock();
 	}
 	
+	private static Menu emulateActionbar;
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getSupportMenuInflater();
 	    inflater.inflate(R.menu.emulate, menu);
+	    emulateActionbar = menu;
 	    
 	    ActionBar actionBar = getSupportActionBar();
 	    actionBar.setDisplayHomeAsUpEnabled(true);
@@ -250,11 +252,14 @@ public class EmulateActivity extends SherlockActivity implements OnSharedPrefere
 			startActivity(new Intent(this, Cheats.class));
 			break;
 		case R.id.pause:
+			MenuItem pauseBtn = emulateActionbar.findItem(R.id.pause);
 			if(!paused){
 				pauseEmulation();
 				paused = true;
+				pauseBtn.setTitle(R.string.Resume);
 				return true;
 			}else{
+				pauseBtn.setTitle(R.string.Pause);
 				paused=false;
 			}					
 			break;
