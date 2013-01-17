@@ -1,171 +1,189 @@
 <resources>
-    <string name="app_name">ANDSemu</string>
-    <string name="title_activity_main">ANDSemu</string>
-	<string name="rom_error">Il y a eu une erreur pendant le chargement de cet ROM :(</string>
-	<string name="OK">OK</string>
-	<string name="location">Position</string>
-	<string name="cant_read_folder">Le dossier ne peut pas être lu !</string>
-	<string name="cancel">Annuler</string>
-	<string name="no_data">Pas de données</string>
-	<string name="Load">Charger</string>
-	<string name="QuickSave">Sauvegarde rapide</string>
-	<string name="QuickRestore">Restauration rapide</string>
-	<string name="SaveState">Sauvegarder l\'état</string>
-	<string name="RestoreState">Restorer l\'état</string>
-	<string name="Settings">Paramètres</string>
-	<string name="touchnotify">To toggle between touch mode and keypad mode, tap the "touch" button at the top</string>
-	<string name="frameskip">Frame skip</string>
-	<string name="frameskipdesc">How many frames to skip when emulating. Helps make slow emulation match real time.</string>
-	<string name="vsync">VSync</string>
-	<string name="vsyncdesc">Seulement afficher à l\'écran entre les frames. Peut ralentir l\'émulation, mais désactiver risque de provoquer des problèmes graphiques.</string>
-	<string name="fps">Montrer les FPS</string>
-	<string name="fpsdesc">Afficher les FPS sur l\'écran.</string>
-	<string name="loading">Chargement</string>
-	<string name="filter">Screen filter</string>
-	<string name="filterdesc">Filter to use when upscaling from Nintendo DS resolution to your screen. Higher quality filters may degrade performance.</string>
-	<string name="threedrenderer">3D Renderer</string>
-	<string name="threedrendererdesc">Quel moteur 3D utiliser.</string>
-	<string-array name ="threed_options">
-		<item>Aucun</item>
-		<item>OpenGL</item>
-		<item>Logiciel</item>
+    <string name="app_name">"ANDSemu"</string>
+    <string name="title_activity_main">"ANDSemu"</string>
+	<string name="rom_error">"Il y a eu une erreur pendant le chargement de cet ROM :("</string>
+	<string name="OK">"OK"</string>
+	<string name="location">"Poste"</string>
+	<string name="cant_read_folder">"Le dossier ne may Pas être de lu!"</string>
+	<string name="cancel">"Annuler"</string>
+	<string name="no_data">"Pas de Data storage"</string>
+	<string name="Load">"Charger"</string>
+	<string name="QuickSave">"Sauvegarde rapide"</string>
+	<string name="QuickRestore">"Restauration rapide"</string>
+	<string name="SaveState">"Sauvegarder l'état"</string>
+	<string name="RestoreState">"Restorer l'état"</string>
+	<string name="Settings">"Paramètres"</string>
+	<string name="touchnotify">"Pour basculer entre le mode tactile et le mode clavier, appuyez sur la \"touche\" bouton en haut"</string>
+	<string name="frameskip">"Saut de trame"</string>
+	<string name="frameskipdesc">"Combien de cadres de sauter lors de l'émulation. Contribue à faire de l'émulation lente correspondre en temps réel."</string>
+	<string name="vsync">"VSync"</string>
+	<string name="vsyncdesc">"Seulement afficher à l'écran entre les frames. Peut ralentir l'émulation, mais désactiver risque de provoquer des problèmes graphiques."</string>
+	<string name="fps">"Montrer FPS lès"</string>
+	<string name="fpsdesc">"Afficher les FPS sur l'écran."</string>
+	<string name="loading">"Chargement"</string>
+	<string name="filter">"Filtre à tamis"</string>
+	<string name="filterdesc">"Filtre à utiliser lors de mise à l'échelle de Nintendo DS résolution de votre écran. Filtres de meilleure qualité peut dégrader les performances."</string>
+	<string name="threedrenderer">"Moteur de rendu 3D"</string>
+	<string name="threedrendererdesc">"Quel moteur 3D UTILISER."</string>
+	<string-array name="threed_options">
+		<item>"Aucun"</item>
+		<item>"OpenGL"</item>
+		<item>"Logiciel "</item>
 	</string-array>
-	<string name="sound">Activer le son</string>
-	<string name="sounddesc">Activer processing and playback of audio. Désactiver peut améliorer les performances.</string>
-	<string name="soundmsg">Would you like to enable sound? This can cause a 3 to 5 FPS performance loss.</string>
-	<string name="yes">Oui</string>
-	<string name="no">Non</string>
-	<string name="Display">Afficher</string>
-	<string name="Controls">Controles</string>
-	<string name="EditLayout">Editer controls layout</string>
-	<string name="EditLayoutDesc">Editer l\'emplacement des \"touch\" controles.</string>
-	<string name="UseTouchPort">Portrait touch buttons</string>
-	<string name="UseTouchPortDesc">Utiliser les boutons "touch" sur l\'écran en mode portrait.</string>
-	<string name="UseTouchLand">Landscape touch buttons</string>
-	<string name="UseTouchLandDesc">Utiliser les boutons "touch" sur l\'écran en mode paysage.</string>
-	<string name="ResetLayout">Reset controls layout</string>
-	<string name="ResetLayoutDesc">Reset the layout of touch controls to their defaults.</string>
-	<string name="Sound">Son</string>
-	<string name="LCDSwap">Swap LCDs</string>
-	<string name="LCDSwapDesc">Check to swap the location of the main and touch LCDs.</string>
-	<string name="ButtonTrans">Transparence des boutons</string>
-	<string name="ButtonTransDesc">Niveau de transparence des boutons virtuels</string>
-	<string name="Haptic">Haptic feedback</string>
-	<string name="HapticDesc">Provide haptic feedback on button press si le matériel le supporte.</string>
-	<string name="KeymapDialogDesc">Appuyer sur un bouton pour mapper ce bouton</string>
-	<string name="KeymapValuePreface">Currently mapped to</string>
-	<string name="EditKeymap">Editer le mappage des touches</string>
-	<string name="EditKeymapDesc">Editer le mappage des boutons physiques au boutons de la DS.</string>
-	<string name="Up">Haut</string>
-	<string name="Down">Bas</string>
-	<string name="Left">Gauche</string>
-	<string name="Right">Droite</string>
-	<string name="A">A</string>
-	<string name="B">B</string>
-	<string name="X">X</string>
-	<string name="Y">Y</string>
-	<string name="Select">Start</string>
-	<string name="Start">Select</string>
-	<string name="L">L</string>
-	<string name="R">R</string>
-	<string name="Touch">Touch</string>
-	<string name="DontRotateLCDs">Don\'t rotate LCDs</string>
-	<string name="DontRotateLCDsDesc">En mode paysage, don\'t rotate the game LCDs. Use this for games that were intended to played with the DS held sideways.</string>
-	<string name="Language">Langue</string>
-	<string name="LanguageDesc">La langue du système. Multilingual ROMs use this setting. Les changements vont être appliqué sur le prochain chargement de ROM.</string>
-	<string name="Gameplay">Gameplay</string>
+	<string name="sound">"Activer le fils"</string>
+	<string name="sounddesc">"Activer processing and playback of audio. Désactiver peut améliorer les performances."</string>
+	<string name="soundmsg">"Voulez-vous activer le son? Cela peut entraîner une perte de performance de 3 à 5 FPS."</string>
+	<string name="yes">"Oui"</string>
+	<string name="no">"Non"</string>
+	<string name="Display">"Afficher"</string>
+	<string name="Controls">"Controles"</string>
+	<string name="EditLayout">"Editer contrôle mise en page"</string>
+	<string name="EditLayoutDesc">"Editer l'emplacement des \"touch\" controles."</string>
+	<string name="UseTouchPort">"Portrait boutons tactiles"</string>
+	<string name="UseTouchPortDesc">"Utiliser les boutons \"touch\" sur l'écran en mode portrait."</string>
+	<string name="UseTouchLand">"Boutons tactiles Paysage"</string>
+	<string name="UseTouchLandDesc">"UTILISER les boutons \"touch\" sur l'écran en mode paysage en."</string>
+	<string name="ResetLayout">"Réinitialiser la disposition des contrôles"</string>
+	<string name="ResetLayoutDesc">"Réinitialiser la disposition des commandes tactiles à leurs valeurs par défaut."</string>
+	<string name="Sound">"Son"</string>
+	<string name="LCDSwap">"Swap LCD"</string>
+	<string name="LCDSwapDesc">"Vérifiez d'échanger l'emplacement du principal et tactile LCD."</string>
+	<string name="ButtonTrans">"Transparence des boutons"</string>
+	<string name="ButtonTransDesc">"Niveau de transparence des boutons Virtuels"</string>
+	<string name="Haptic">"Retour haptique"</string>
+	<string name="HapticDesc">"Fournir une rétroaction haptique sur un bouton, si le matériel le supportAchat."</string>
+	<string name="KeymapDialogDesc">"Appuyer sur bouton d'écoulement non mappeur this bouton"</string>
+	<string name="KeymapValuePreface">"Actuellement mis en correspondance avec"</string>
+	<string name="EditKeymap">"Le mappage des Editer touche"</string>
+	<string name="EditKeymapDesc">"Editer le mappage des boutons physiques au boutons de la DS."</string>
+	<string name="Up">"Haut"</string>
+	<string name="Down">"Bas"</string>
+	<string name="Left">"Gauche"</string>
+	<string name="Right">"Droite"</string>
+	<string name="A">"A"</string>
+	<string name="B">"B"</string>
+	<string name="X">"X"</string>
+	<string name="Y">"Y"</string>
+	<string name="Select">"Start"</string>
+	<string name="Start">"Select"</string>
+	<string name="L">"L"</string>
+	<string name="R">"R"</string>
+	<string name="Touch">"Appuyer sur"</string>
+	<string name="DontRotateLCDs">"Ne tournez pas les écrans LCD"</string>
+	<string name="DontRotateLCDsDesc">"En mode de paysage, ne pas faire tourner le jeu écrans LCD. Utilisez cette fonction pour les jeux qui étaient destinés à jouer avec les détenus DS sur le côté."</string>
+	<string name="Language">"Langue"</string>
+	<string name="LanguageDesc">"La langue du system. ROM multilingues utiliser ce paramètre. Les Changements VONT être de l'appliqué sur le Prochain chargement de ROM."</string>
+	<string name="Gameplay">"Gameplay"</string>
     
     <!-- Release 11 -->
-    <string name="AddCheat">Add a new Action Replay cheat</string>
-    <string name="Cheats">Cheats</string>
-    <string name="Exit">Exit</string>
-    <string name="Edit">Edit</string>
-    <string name="Delete">Delete</string>
-    <string name="Description">Description</string>
+    <string name="AddCheat">"Ajouter une nouvelle action Replay triche"</string>
+    <string name="Cheats">"tricheurs"</string>
+    <string name="Exit">"Quitter"</string>
+    <string name="Edit">"Modifier"</string>
+    <string name="Delete">"Effacer"</string>
+    <string name="Description">"Description"</string>
     
     <!-- Release 12 -->
-    <string name="EnableMicrophone">Enable microphone</string>
-    <string name="EnableMicrophoneDesc">Use your device\'s microphone as the DS microphone.</string>
-    <string name="AlwaysTouch">Always allow touch</string>
-    <string name="AlwaysTouchDesc">Always process the DS touchscreen, even when not in touch mode. For games that require using controls and touchscreen at the same time.</string>
+    <string name="EnableMicrophone">"Activer microphone"</string>
+    <string name="EnableMicrophoneDesc">"Utilisez le microphone de votre appareil comme le microphone DS."</string>
+    <string name="AlwaysTouch">"Toujours laisser toucher"</string>
+    <string name="AlwaysTouchDesc">"Toujours traiter l'écran tactile DS, même lorsqu'il n'est pas en mode tactile. Pour les jeux qui nécessitent l'utilisation de commandes et l'écran tactile en même temps."</string>
     
     <!-- Release 14 -->
-    <string name="CheatCode">Code</string>
-    <string name="CurrentValue">Current value</string>
-    <string name="ImageOfFolder">Image of file</string>
+    <string name="CheatCode">"Code"</string>
+    <string name="CurrentValue">"Valeur actuelle"</string>
+    <string name="ImageOfFolder">"Image de fichier"</string>
+    <string name="about">"ANDSemu est un fork de nds4droid. nds4droid à son tour, est un port de DeSmuME pour Android par Jeffrey Quesnelle \n\n ANDSemu se fait par un groupe d'amis de l'université collectivly connu sous le nom d'équipe miraie \n\n Credits:.. \n Jeffrey Quesnelle (emozilla), pour nds4droid \nTeam DeSmuME, pour DeSmuME \n Sykonist, l'icône de l'nds blanc (utilisé dans le développement) \n Evan-Amos, pour ses contrabutions à wikipedia et à notre actuelle bleu gras nds icône \n Alexander Ponomarev, pour android-file- de dialogue \nLachlan Tychsen - Smith, pour les maths-néon \n Shemanarev Maxim, pour Anti-Grain Geometry (AGG) \np7zip &amp; 7zip, pour l'archivage puissant"</string>
+	<string name="thankyou">"Merci!"</string>
+	
+	<!-- Release m16 -->
+	<string name="CallToPlay">"Jouer dès maintenant!"</string>
+	<string name="ResumeGame">"Reprendre ma partie"</string>
+    <string name="CallToLoadAutosave">"Jouer Autosave dernière"</string>
+    <string name="QuickSettings">"Réglages initiaux"</string>
+    <string name="AllSettings">"Tous les réglages"</string>
+    <string name="Autosaves">"Sauvegardes automatiques"</string>
+    <string name="NoAutosaves">"Pas encore sauvegarde automatiquement"</string>
+    <string name="About">"A propos de"</string>
+    
+    <!-- Release m17 -->
+    <string name="Pause">"Pause"</string>
+    <string name="Resume">"Reprendre"</string>
+    <string name="NdsLikeLandscape">"NDS comme le paysage"</string>
+    <string name="NdsLikeLandscapeDesc">"En orientation paysage empiler l'écran du haut au-dessus de l'écran du bas. Les contrôles seront aux côtés des écrans."</string>
 	
 	<!-- Do not translate -->
 	<string-array name="filternames">
-		<item>Normal</item>
-		<item>HQ2x</item>
-		<item>2XSaI</item>
-		<item>Super2XSaI</item>
-		<item>SuperEagle</item>
-		<item>Scanline</item>
-		<item>Bilinear</item>
-		<item>Nearest 2X</item>
-		<item>HQ2xS</item>
-		<item>LQ2x</item>
-		<item>LQ2xS</item>
-		<item>EPX</item>
-		<item>Nearest+ 1.5X</item>
-		<item>Nearest 1.5X</item>
-		<item>EPX+</item>
-		<item>EPX 1.5X</item>
-		<item>EPX+ 1.5X</item>
-		<item>HQ4x</item>
+		<item>"Normal"</item>
+		<item>"HQ2x"</item>
+		<item>"2XSaI"</item>
+		<item>"Super2XSaI"</item>
+		<item>"SuperEagle"</item>
+		<item>"Scanline"</item>
+		<item>"Bilinear"</item>
+		<item>"Nearest 2X"</item>
+		<item>"HQ2xS"</item>
+		<item>"LQ2x"</item>
+		<item>"LQ2xS"</item>
+		<item>"EPX"</item>
+		<item>"Nearest+ 1.5X"</item>
+		<item>"Nearest 1.5X"</item>
+		<item>"EPX +"</item>
+		<item>"EPX 1.5X"</item>
+		<item>"EPX + 1.5X"</item>
+		<item>"HQ4x"</item>
 	</string-array>
 		<string-array name="zerothroughnine">
-		<item>0</item>
-		<item>1</item>
-		<item>2</item>
-		<item>3</item>
-		<item>4</item>
-		<item>5</item>
-		<item>6</item>
-		<item>7</item>
-		<item>8</item>
-		<item>9</item>
+		<item>"0"</item>
+		<item>"1"</item>
+		<item>"2"</item>
+		<item>"5"</item>
+		<item>"4"</item>
+		<item>"5"</item>
+		<item>"6"</item>
+		<item>"7"</item>
+		<item>"8"</item>
+		<item>"9"</item>
 	</string-array>
 	<string-array name="zerothroughseventeen">
-		<item>0</item>
-		<item>1</item>
-		<item>2</item>
-		<item>3</item>
-		<item>4</item>
-		<item>5</item>
-		<item>6</item>
-		<item>7</item>
-		<item>8</item>
-		<item>9</item>
-		<item>10</item>
-		<item>11</item>
-		<item>12</item>
-		<item>13</item>
-		<item>14</item>
-		<item>15</item>
-		<item>16</item>
-		<item>17</item>
+		<item>"0"</item>
+		<item>"1"</item>
+		<item>"2"</item>
+		<item>"5"</item>
+		<item>"4"</item>
+		<item>"5"</item>
+		<item>"6"</item>
+		<item>"7"</item>
+		<item>"8"</item>
+		<item>"9"</item>
+		<item>"10 "</item>
+		<item>"11"</item>
+		<item>"12"</item>
+		<item>"13 "</item>
+		<item>"14 "</item>
+		<item>"15"</item>
+		<item>"16"</item>
+		<item>"17"</item>
 	</string-array>
    	<string-array name="zerothroughtwo">
-		<item>0</item>
-		<item>1</item>
-		<item>2</item>
+		<item>"0"</item>
+		<item>"1"</item>
+		<item>"2"</item>
 	</string-array>
 	<string-array name="languages">
-		<item>日本語</item>
-		<item>English</item>
-		<item>Français</item>
-		<item>Deutsch</item>
-		<item>Italiano</item>
-		<item>Español</item>
+		<item>"日本语"</item>
+		<item>"English"</item>
+		<item>"Français"</item>
+		<item>"Deutsch"</item>
+		<item>"Italiano"</item>
+		<item>"Español"</item>
 	</string-array>
 	<string-array name="zerothroughfive">
-		<item>0</item>
-		<item>1</item>
-		<item>2</item>
-		<item>3</item>
-		<item>4</item>
-		<item>5</item>
+		<item>"0"</item>
+		<item>"1"</item>
+		<item>"2"</item>
+		<item>"5"</item>
+		<item>"4"</item>
+		<item>"5"</item>
 	</string-array>
 </resources>
