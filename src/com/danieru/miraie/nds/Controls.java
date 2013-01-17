@@ -320,7 +320,7 @@ class Controls {
 					}
 				}
 				
-				if(!pressedButton && (view.alwaysTouch || view.landscapeStackScreens)) 
+				if(!pressedButton && (view.alwaysTouch || (view.landscape && view.landscapeStackScreens))) 
 					return touchScreenProcess(event);
 					
 			}
@@ -334,7 +334,7 @@ class Controls {
 					activeTouches.clear();
 					break;
 				}
-				if(view.alwaysTouch || view.landscapeStackScreens)
+				if(view.alwaysTouch || (view.landscape && view.landscapeStackScreens))
 					touchScreenProcess(event);
 				//FT
 			case MotionEvent.ACTION_CANCEL:
