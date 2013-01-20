@@ -3,9 +3,9 @@
 	<!-- Release 1 -->
     <string name="app_name">"ANDSemu"</string>
     <string name="title_activity_main">"ANDSemu"</string>
-	<string name="rom_error">"Fehler beim Laden des ROM :("</string>
+	<string name="rom_error">"Es trat ein Fehler beim Laden auf :("</string>
 	<string name="OK">"OK"</string>
-	<string name="location">"Ort"</string>
+	<string name="location">"Pfad"</string>
     <string name="cant_read_folder">"Ordner kann nicht gelesen werden!"</string>
     <string name="cancel">"Abbrechen"</string>
     <string name="no_data">"Keine Daten"</string>
@@ -17,41 +17,41 @@
     <string name="Settings">"Einstellungen"</string>
     
     <!-- Release 2 -->
-    <string name="touchnotify">"Um zwischen Tastatur und touch Modus umzuschalten, tippen Sie oben auf den \"touch\" Button"</string>
-    <string name="frameskip">"Vollbildübersprung
+    <string name="touchnotify">"Um zwischen Tastatur und Touch Modus umzuschalten, tippen Sie oben auf den \"touch\" Button"</string>
+    <string name="frameskip">"Frameskip0
 "</string>
-    <string name="frameskipdesc">"Wie viele Frames zu überspringen, wenn emuliert. Hilft machen langsame Emulation überein Echtzeit."</string>
+    <string name="frameskipdesc">"Anzahl der zu überspringenden Frames. Erhöht Performance."</string>
     <string name="vsync">"VSync"</string>
-    <string name="vsyncdesc">"Nur auf dem Bildschirm in-zwischen Frames zu ziehen. Verlangsamen kann Emulation, sondern Ausschalten kann Grafikfehler verursachen."</string>
+    <string name="vsyncdesc">"Framerate synchronisation für bessere Stabilität. Erhöht Framerate, kann aber Grafikfehler verursachen"</string>
     <string name="fps">"Framerate anzeigen"</string>
-    <string name="fpsdesc">"Zeichnen FPS auf den Bildschirm."</string>
+    <string name="fpsdesc">"Zeigt FPS an."</string>
         
     <!-- Release 3 -->
     <string name="loading">"Lädt"</string>    
     
     <!-- Release 4 -->
-    <string name="filter">"Siebfilter"</string>
-    <string name="filterdesc">"Filter zu verwenden, wenn Upscaling von Nintendo DS Auflösung für Ihre sceren. Höhere Qualität Filter können die Leistung beeinträchtigen."</string>
+    <string name="filter">"Filter"</string>
+    <string name="filterdesc">"Filter erhöhen die Qualität der Auflösung. Filter können die Leistung beeinträchtigen."</string>
     
     <!-- Release 5 -->
     <string name="threedrenderer">"3D Renderer"</string>
     <string name="threedrendererdesc">"Zu benutzende 3D Rendering Engine."</string>
     <string-array name="threed_options">
-        <item>"Kein"</item>
+        <item>"Keine"</item>
         <item>"OpenGL"</item>
         <item>"Software"</item>
     </string-array>
-    <string name="sound">"Sounds aktivieren"</string>
-    <string name="sounddesc">"Verarbeiten und Abspielen von Ton einschalten. Abschalten kann die Leistung steigern."</string>
-    <string name="soundmsg">"M�chten Sie den Ton einschalten? Dies k�nnte die Leistung um eine Framerate von 3 to 5 FPS mindern."</string>
+    <string name="sound">"Ton aktivieren"</string>
+    <string name="sounddesc">"Schalte Ton an. Kann Leistung beeinträchtigen"</string>
+    <string name="soundmsg">"Möchhten Sie den Ton einschalten? Dies könnte die Leistung um 3 bis 5 FPS mindern."</string>
     <string name="yes">"Ja"</string>
     <string name="no">"Nein"</string>
     
     <!-- Release 8 -->
     <string name="Display">"Anzeige"</string>
-    <string name="Controls">"Kontrollen"</string>
-    <string name="EditLayout">"Bearbeiten steuert Layout"</string>
-    <string name="EditLayoutDesc">"Bearbeiten, wo die Touch-Steuerung auf dem Bildschirm platziert werden."</string>
+    <string name="Controls">"Steuerung"</string>
+    <string name="EditLayout">"Layout bearbeiten"</string>
+    <string name="EditLayoutDesc">"Bearbeiten die Touch-Steuerung auf dem Bildschirm."</string>
     <string name="UseTouchPort">"Portrait touch buttons"</string>
     <string name="UseTouchPortDesc">"Verwenden Sie Touch-Tasten auf dem Bildschirm im Hochformat."</string>
     <string name="UseTouchLand">"Landscape Touch-Tasten"</string>
@@ -60,19 +60,19 @@
     <string name="ResetLayoutDesc">"Setzen Sie das Layout der Touch-Steuerung auf die Standardwerte."</string>
     <string name="Sound">"Sound"</string>
     <string name="LCDSwap">"Swap LCDs"</string>
-    <string name="LCDSwapDesc">"Überprüfen Sie die Position des Haupt-und Touch-LCDs tauschen."</string>
+    <string name="LCDSwapDesc">"Tausche die Position des Haupt-und Touch-LCDs."</string>
     <string name="ButtonTrans">"Button Transparenz"</string>
-    <string name="ButtonTransDesc">"Wie transparent die On-Screen-Touch-Tasten sollten"</string>
+    <string name="ButtonTransDesc">"Setze die Button Sichtbarkeit ein"</string>
     <string name="Haptic">"Haptisches Feedback"</string>
     <string name="HapticDesc">"Geben haptisches Feedback bei Tastendruck, wenn vom Gerät unterstützt."</string>
     <string name="KeymapDialogDesc">"Drücken Sie eine Taste, um zur Karte zu diesem Button"</string>
     <string name="KeymapValuePreface">"Derzeit abgebildet"</string>
-    <string name="EditKeymap">"Bearbeiten Tastenzuordnungen"</string>
-    <string name="EditKeymapDesc">"Bearbeiten Zuordnungen von Hardware-Tasten, um DS-Tasten."</string>
-    <string name="Up">"auf"</string>
-    <string name="Down">"Nach unten"</string>
-    <string name="Left">"Left"</string>
-    <string name="Right">"Right"</string>
+    <string name="EditKeymap">"Bearbeite Tastenzuordnungen"</string>
+    <string name="EditKeymapDesc">"Bearbeit Zuordnungen von Hardware-Tasten von DS-Tasten."</string>
+    <string name="Up">"Hoch"</string>
+    <string name="Down">"Runter"</string>
+    <string name="Left">"Links"</string>
+    <string name="Right">"Rechts"</string>
     <string name="A">"A"</string>
     <string name="B">"B"</string>
     <string name="X">"X"</string>
@@ -81,51 +81,51 @@
     <string name="Start">"Select"</string>
     <string name="L">"L"</string>
     <string name="R">"R"</string>
-    <string name="Touch">"Fasse. Si"</string>
+    <string name="Touch">"Touch"</string>
     
     <!-- Release 10 -->
-    <string name="DontRotateLCDs">"Nicht drehen LCDs"</string>
+    <string name="DontRotateLCDs">"LCDs nicht drehen"</string>
     <string name="DontRotateLCDsDesc">"Im Querformat drehen sich nicht das Spiel LCDs. Verwenden Sie diese für Spiele, die für die Verwendung mit der DS gehalten seitwärts gespielt wurden."</string>
     <string name="Language">"Language"</string>
-    <string name="LanguageDesc">"Die Sprache des Systems. Mehrsprachige ROMs verwenden Sie diese Einstellung. Veränderungen werden am nächsten ROM Last aufgebracht werden."</string>
+    <string name="LanguageDesc">"Systemsprache Einstellen. Viele Spiele nutzen die Systemsprache um die Spielsprache zu setzen."</string>
     <string name="Gameplay">"Gameplay"</string>
     
     <!-- Release 11 -->
-    <string name="AddCheat">"Fügen Sie eine neue Action Replay Cheat"</string>
-    <string name="Cheats">"fälschungen"</string>
+    <string name="AddCheat">"Fügen Sie einen neuen Action Replay Cheat"</string>
+    <string name="Cheats">"Cheat"</string>
     <string name="Exit">"Beenden"</string>
     <string name="Edit">"Bearbeiten"</string>
     <string name="Delete">"Löschen"</string>
     <string name="Description">"Beschreibung    "</string>
     
     <!-- Release 12 -->
-    <string name="EnableMicrophone">"Aktivieren Mikrofon"</string>
+    <string name="EnableMicrophone">"Aktiviere Mikrofon"</string>
     <string name="EnableMicrophoneDesc">"Verwenden Sie das Mikrofon Ihres Geräts, wie das DS-Mikrofon."</string>
-    <string name="AlwaysTouch">"Immer erlauben Touch"</string>
-    <string name="AlwaysTouchDesc">"Immer verarbeiten DS Touchscreen, auch wenn sie nicht in Berührung Modus. Für Spiele, die Verwendung von Steuerelementen und Touchscreen zur gleichen Zeit benötigen."</string>
+    <string name="AlwaysTouch">"Touch immer erlauben"</string>
+    <string name="AlwaysTouchDesc">"Nutze Steuerung und Touch gleichzeitig."</string>
     
     <!-- Release m14 -->
     <string name="CheatCode">"Code"</string>
     <string name="CurrentValue">"Aktueller Wert"</string>
     <string name="ImageOfFolder">"Bild-Datei"</string>
-    <string name="about">"ANDSemu ist ein Fork von nds4droid. nds4droid wiederum ist eine Portierung von DeSmuME to android von Jeffrey Quesnelle \n \n ANDSemu von einer Gruppe von Kommilitonen kollektiv als Team miraie bekannt gemacht \n \n Credits:.. \n Jeffrey Quesnelle (emozilla), für nds4droid \nTeam DeSmuME für DeSmuME \n Sykonist auf das Symbol des weißen nds (nur in der Entwicklung verwendet) \n Evan-Amos, für seine contrabutions die wikipedia und unsere aktuellen blaue Fett nds-Symbol \n Alexander Ponomarev für android-file- Dialog \nLachlan Tychsen - Smith, für Mathe-neon \n Maxim Shemanarev für Anti-Grain Geometry (AGG) \np7zip &amp; 7zip, für leistungsstarke Archivierung"</string>
+    <string name="about">"ANDSemu ist ein Fork von nds4droid. nds4droid wiederum ist eine Portierung von DeSmuME to android von Jeffrey Quesnelle \n \n ANDSemu von einer Gruppe von Kommilitonen kollektiv als Team miraie bekannt gemacht \n \n Credits:.. \n Jeffrey Quesnelle (emozilla), für nds4droid \nTeam DeSmuME für DeSmuME \n Sykonist auf das Symbol des weißen nds (nur in der Entwicklung verwendet) \n Evan-Amos, für seine contrabutions die wikipedia und unsere aktuellen blaue Fett nds-Symbol \n Alexander Ponomarev für android-file- Dialog \nLachlan Tychsen - Smith, für Mathe-neon \n Maxim Shemanarev für Anti-Grain Geometry (AGG) \n Acocalypso für die deutsch Übersetzung\np7zip &amp; 7zip, für leistungsstarke Archivierung"</string>
 	<string name="thankyou">"Vielen Dank!"</string>
 	
 	<!-- Release m16 -->
 	<string name="CallToPlay">"Jetzt spielen!"</string>
 	<string name="ResumeGame">"Spiel fortsetzen"</string>
-    <string name="CallToLoadAutosave">"Spielen letzten Autosave"</string>
+    <string name="CallToLoadAutosave">"Letzten Autosave laden"</string>
     <string name="QuickSettings">"Quick Settings"</string>
     <string name="AllSettings">"Alle Einstellungen"</string>
     <string name="Autosaves">"Autosaves"</string>
-    <string name="NoAutosaves">"Kein Autosaves noch"</string>
+    <string name="NoAutosaves">"Keine Autosaves"</string>
     <string name="About">"über"</string>
     
     <!-- Release m17 -->
     <string name="Pause">"Pause"</string>
     <string name="Resume">"Fortsetzen"</string>
-    <string name="NdsLikeLandscape">"NDS wie Landschaft"</string>
-    <string name="NdsLikeLandscapeDesc">"Im Querformat stapeln oberen Bildschirm über dem unteren Bildschirm. Die Kontrollen werden neben den Bildschirmen sein."</string>
+    <string name="NdsLikeLandscape">"NDS Landscape ansicht"</string>
+    <string name="NdsLikeLandscapeDesc">"Querformat von LCDs"</string>
     
     <!-- Do not translate -->
     <string-array name="filternames">
